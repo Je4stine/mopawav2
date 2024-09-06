@@ -32,12 +32,12 @@ function Navbar() {
         </div>
         <div className=" flex flex-row items-center w-full justify-end">
             <nav className=" font-bold lg:flex items-center hidden">
-                    <NavLink to ="/" className={({ isActive }) => isActive ? 'text-white bg-yellow-500 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} px-10 hover:text-white hover:bg-yellow-500 hover:rounded-md py-2` }>Home</NavLink>
-                    <NavLink to ="/products"className={({ isActive }) => isActive ? 'text-white bg-yellow-500 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} px-10 hover:text-white hover:bg-yellow-500 hover:rounded-md py-2`}>Products</NavLink>
-                    <NavLink to ="/customs" className={({ isActive }) => isActive ? 'text-white bg-yellow-500 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} px-10 hover:text-white hover:bg-yellow-500 hover:rounded-md py-2`}>Customization</NavLink>
-                    <NavLink to ="/blog" className={({ isActive }) => isActive ? 'text-white bg-yellow-500 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} px-10 hover:text-white hover:bg-yellow-500 hover:rounded-md py-2`}>Blogs</NavLink>
-                    <NavLink to ="/faq" className={({ isActive }) => isActive ? 'text-white bg-yellow-500 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} px-10 hover:text-white hover:bg-yellow-500 hover:rounded-md py-2`}>FAQs</NavLink>
-                    <NavLink to ="/about"className={({ isActive }) => isActive ? 'text-white bg-yellow-500 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} px-10 hover:text-white hover:bg-yellow-500 hover:rounded-md py-2`}>About Us</NavLink>
+                    <NavLink to ="/" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} mx-10 hover:text-white hover:bg-yellow-400 hover:rounded-md py-2 px-3` }>Home</NavLink>
+                    <NavLink to ="/products"className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} mx-10 hover:text-white hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>Products</NavLink>
+                    <NavLink to ="/customs" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} mx-10 hover:text-white hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>Customization</NavLink>
+                    <NavLink to ="/blog" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} mx-10 hover:text-white hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>Blogs</NavLink>
+                    <NavLink to ="/faq" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} mx-10 hover:text-white hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>FAQs</NavLink>
+                    <NavLink to ="/about" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled?"text-black":"text-white"} mx-10 hover:text-white hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>About Us</NavLink>
             </nav>
             <div className=" lg:flex flex-row items-center hidden">
                 <IoSearch size={30} className={`${isScrolled?"text-black":"text-white"} mr-10`}/>

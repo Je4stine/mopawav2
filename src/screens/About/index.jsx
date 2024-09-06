@@ -1,4 +1,7 @@
-
+import { IoPerson } from "react-icons/io5"; 
+import { FaEye } from "react-icons/fa";
+import { PiBookOpenTextLight } from "react-icons/pi";
+import { IoDiamondSharp } from "react-icons/io5";
 function About() {
   
 
@@ -14,6 +17,8 @@ function About() {
        
     </div> 
 
+
+
     <div className=" bg-gray-200 lg:flex lg:justify-around lg:pl-[15%] py-10 lg:pr-[10%]">
           <div className=" p-5">
               <h1 className="lg:text-4xl font-bold mb-5">About Mopawa</h1>
@@ -25,7 +30,47 @@ function About() {
           <div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/gQrFAFMuiYc?si=VDnxB3M0th5Fcfvb&amp;controls=0&amp;start=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
+    </div>
+
+    <div className=" flex flex-col items-center py-10">
+      <h1 className="lg:text-4xl text-2xl font-bold mb-5">Mopawa Enterprise Culture</h1>
+
+      <div className=" lg:flex lg:justify-around lg:flex-1">
+
+        <div className=" flex flex-col items-center">
+              <div className=" flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
+                <div className=" bg-gray-400 rounded-full p-[40px]">
+                  <IoPerson size={50} color="white"/>
+                </div>
+              </div>
+              <div className=" w-[45%] flex flex-col items-center">
+                  <h1>Profile</h1>
+                  <p className=" text-center text-gray-400">Leading full chain service provider in the shared power bank industry.</p>
+              </div>
         </div>
+
+
+        <div className="flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
+        <div className=" bg-gray-400 rounded-full p-[40px]">
+            <FaEye size={50} color="white"/>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
+        <div className=" bg-gray-400 rounded-full p-[40px]">
+            <PiBookOpenTextLight size={50} color="white"/>
+          </div>
+        </div>
+
+
+        <div className="flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
+        <div className=" bg-gray-400 rounded-full p-[40px]">
+            <IoDiamondSharp size={50} color="white"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
     </>
   )
 }
