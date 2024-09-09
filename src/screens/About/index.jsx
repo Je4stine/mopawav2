@@ -2,6 +2,8 @@ import { IoPerson } from "react-icons/io5";
 import { FaEye } from "react-icons/fa";
 import { PiBookOpenTextLight } from "react-icons/pi";
 import { IoDiamondSharp } from "react-icons/io5";
+import Contact from '../../components/Contact'
+
 function About() {
   
 
@@ -32,7 +34,7 @@ function About() {
           </div>
     </div>
 
-    <div className=" flex flex-col items-center py-10">
+    <div className=" flex flex-col items-center py-10 bg-gray-100">
       <h1 className="lg:text-4xl text-2xl font-bold mb-5">Mopawa Enterprise Culture</h1>
 
       <div className=" lg:flex lg:justify-around lg:flex-1">
@@ -50,27 +52,46 @@ function About() {
         </div>
 
 
-        <div className="flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
-        <div className=" bg-gray-400 rounded-full p-[40px]">
-            <FaEye size={50} color="white"/>
-          </div>
-        </div>
+        <div className=" flex flex-col items-center mb-10">
+            <div className="flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
+              <div className=" bg-gray-400 rounded-full p-[40px]">
+                <FaEye size={50} color="white"/>
+              </div>
+            </div>
 
+            <div className=" w-[45%] flex flex-col items-center">
+                  <h1>Vision</h1>
+                  <p className=" text-center text-gray-400">To be a company that benefits all mankind.</p>
+              </div>
+        </div>
+       
+        <div className=" flex flex-col items-center mb-10">
         <div className="flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
         <div className=" bg-gray-400 rounded-full p-[40px]">
             <PiBookOpenTextLight size={50} color="white"/>
           </div>
         </div>
+        <div className=" w-[45%] flex flex-col items-center">
+                  <h1>Mission</h1>
+                  <p className=" text-center text-gray-400">People-oriented, make wisdom and great love products Keep forging ahead, and realize global operation</p>
+        </div>
+        </div>
 
-
+        <div className=" flex flex-col items-center mb-10">
         <div className="flex flex-col items-center justify-center mr-10 border border-gray-400 border-opacity-50 rounded-full h-[250px] w-[250px]">
         <div className=" bg-gray-400 rounded-full p-[40px]">
             <IoDiamondSharp size={50} color="white"/>
           </div>
         </div>
+        <div className=" w-[45%] flex flex-col items-center">
+                  <h1>Values</h1>
+                  <p className=" text-center text-gray-400">Punctuality, trustworthiness, modesty and uprightness.</p>
+        </div>
+        </div>
 
       </div>
     </div>
+    <Contact/>
     </>
   )
 }
