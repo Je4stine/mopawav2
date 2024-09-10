@@ -2,7 +2,7 @@
 function Venue() {
   return (
     <div>
-        <h1 className=" py-10 text-3xl font-bold text-center">Highly Used Venues for Power Bank Rental Stations</h1>
+        <h1 className=" py-10 lg:text-3xl text-2xl font-bold text-center">Highly Used Venues for Power Bank Rental Stations</h1>
         <div className=" grid lg:grid-cols-4">
             <div className=" relative group">
                 <img  src="https://chargeeight.com/wp-content/uploads/2022/08/powerbank-sharing-venue-restuarant.jpg" alt="" />

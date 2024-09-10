@@ -37,24 +37,24 @@ function Navbar() {
       </div>
 
       {/* Navigation Links */}
-      <nav className={`font-bold lg:flex items-center hidden lg:block`}>
-        <NavLink to="/" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>Home</NavLink>
+      <nav className={`font-bold lg:flex items-center hidden `}>
+        <NavLink to="/" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3 hover:text-white`}>Home</NavLink>
         <div className="relative group mx-4">
-          <NavLink to="/products" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} py-2 px-3 hover:bg-yellow-400 hover:rounded-md`}>Products</NavLink>
+          <NavLink to="/products" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} py-2 px-3 hover:bg-yellow-400 hover:rounded-md hover:text-white`}>Products</NavLink>
           <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible">
             <ul className="py-2">
-              <li><NavLink to="/products/product1" className="block px-4 py-2 text-black hover:bg-yellow-400">Desktop station</NavLink></li>
-              <li><NavLink to="/products/product2" className="block px-4 py-2 text-black hover:bg-yellow-400">Joint Entrepreneurship</NavLink></li>
-              <li><NavLink to="/products/product3" className="block px-4 py-2 text-black hover:bg-yellow-400">Stand</NavLink></li>
-              <li><NavLink to="/products/product4" className="block px-4 py-2 text-black hover:bg-yellow-400">Powerbanks</NavLink></li>
-              <li><NavLink to="/products/product5" className="block px-4 py-2 text-black hover:bg-yellow-400">Admin panel</NavLink></li>
+              <li><NavLink to="/products/product1" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Desktop station</NavLink></li>
+              <li><NavLink to="/products/product2" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Joint Entrepreneurship</NavLink></li>
+              <li><NavLink to="/products/product3" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Stand</NavLink></li>
+              <li><NavLink to="/products/product4" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Powerbanks</NavLink></li>
+              <li><NavLink to="/products/product5" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Admin panel</NavLink></li>
             </ul>
           </div>
         </div>
-        <NavLink to="/customs" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>Customization</NavLink>
-        <NavLink to="/blog" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>Blogs</NavLink>
-        <NavLink to="/faq" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>FAQs</NavLink>
-        <NavLink to="/about" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3`}>About Us</NavLink>
+        <NavLink to="/customs" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3 hover:text-white`}>Customization</NavLink>
+        <NavLink to="/blog" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3 hover:text-white`}>Blogs</NavLink>
+        <NavLink to="/faq" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3 hover:text-white`}>FAQs</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3 hover:text-white`}>About Us</NavLink>
       </nav>
 
       {/* Search and Menu for Large Screens */}
@@ -67,12 +67,12 @@ function Navbar() {
       {selected && (
         <div className="lg:hidden absolute top-[80px] left-0 w-full bg-white z-10">
           <ul className="flex flex-col">
-            <li><NavLink to="/" className="block px-4 py-2 text-black hover:bg-yellow-400">Home</NavLink></li>
-            <li><NavLink to="/products" className="block px-4 py-2 text-black hover:bg-yellow-400">Products</NavLink></li>
-            <li><NavLink to="/customs" className="block px-4 py-2 text-black hover:bg-yellow-400">Customization</NavLink></li>
-            <li><NavLink to="/blog" className="block px-4 py-2 text-black hover:bg-yellow-400">Blogs</NavLink></li>
-            <li><NavLink to="/faq" className="block px-4 py-2 text-black hover:bg-yellow-400">FAQs</NavLink></li>
-            <li><NavLink to="/about" className="block px-4 py-2 text-black hover:bg-yellow-400">About Us</NavLink></li>
+            <li><NavLink to="/" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Home</NavLink></li>
+            <li><NavLink to="/products" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Products</NavLink></li>
+            <li><NavLink to="/customs" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Customization</NavLink></li>
+            <li><NavLink to="/blog" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Blogs</NavLink></li>
+            <li><NavLink to="/faq" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">FAQs</NavLink></li>
+            <li><NavLink to="/about" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">About Us</NavLink></li>
           </ul>
         </div>
       )}

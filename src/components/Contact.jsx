@@ -19,23 +19,27 @@ function Contact() {
 
         <div className=" flex flex-col flex-[2] px-[80px] py-10">
             <h1 className=" mb-10">Message Us</h1>
-            <div className=" flex w-full mb-10">
+
+            
+            <div className=" lg:flex w-full mb-10">
                 <div className=" flex flex-col flex-1">
                     <label htmlFor="" className=" mb-5"> Name*</label>
                     <input type="text" title="Email" className="p-2 rounded-md w-full"  />
                 </div>
-                <div className=" flex flex-col flex-1 ml-10">
+
+                <div className=" flex flex-col flex-1 lg:ml-10">
                     <label htmlFor="" className=" mb-5"> City/Country*</label>
                     <input type="text" title="Email" className="p-2 rounded-md w-full"  />
                 </div>
             </div>
 
-            <div className=" flex w-full mb-10">
+
+            <div className=" lg:flex w-full mb-10">
             <div className=" flex flex-col flex-1">
                 <label htmlFor="" className=" mb-5"> Email*</label>
                  <input type="text" title="Email" className="p-2 rounded-md w-full" />
             </div>
-            <div className=" flex flex-col flex-1 ml-10">
+            <div className=" flex flex-col flex-1 lg:ml-10">
                     <label htmlFor="" className=" mb-5"> Phone/ WhatsApp Number</label>
                     <input type="text" title="Email" className="p-2 rounded-md w-full"  />
             </div>
