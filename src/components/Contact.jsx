@@ -22,28 +22,28 @@ function Contact() {
             <div className=" flex w-full mb-10">
                 <div className=" flex flex-col flex-1">
                     <label htmlFor="" className=" mb-5"> Name*</label>
-                    <input type="text" title="Email" className="p-2 rounded-md w-full" placeholder="Your email*" />
+                    <input type="text" title="Email" className="p-2 rounded-md w-full"  />
                 </div>
                 <div className=" flex flex-col flex-1 ml-10">
                     <label htmlFor="" className=" mb-5"> City/Country*</label>
-                    <input type="text" title="Email" className="p-2 rounded-md w-full" placeholder="Your email*" />
+                    <input type="text" title="Email" className="p-2 rounded-md w-full"  />
                 </div>
             </div>
 
             <div className=" flex w-full mb-10">
             <div className=" flex flex-col flex-1">
                 <label htmlFor="" className=" mb-5"> Email*</label>
-                 <input type="text" title="Email" className="p-2 rounded-md w-full" placeholder="Your email*" />
+                 <input type="text" title="Email" className="p-2 rounded-md w-full" />
             </div>
             <div className=" flex flex-col flex-1 ml-10">
                     <label htmlFor="" className=" mb-5"> Phone/ WhatsApp Number</label>
-                    <input type="text" title="Email" className="p-2 rounded-md w-full" placeholder="Your email*" />
+                    <input type="text" title="Email" className="p-2 rounded-md w-full"  />
             </div>
           
             </div>
                 <div>
                     <label htmlFor="" className=" mb-5"> Message</label>
-                    <textarea className="p-2 rounded-md w-full" placeholder="Your message*"  rows="4"cols="50" />
+                    <textarea className="p-2 rounded-md w-full"  rows="4"cols="50" />
                 </div>
         </div>
     </div>

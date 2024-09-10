@@ -7,6 +7,7 @@ import Blogs from './screens/Blogs/Blogs'
 import Customization from './screens/Customization/Cutomization'
 import Faq from './screens/Faq/Faq'
 import Products from './screens/Products/Products'
+import ProductDetails from './screens/ProductDetails/ProductDetails'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/customs' element={<Customization/>}/>
             <Route path='/faq' element={<Faq/>}/>
             <Route path='/products' element={<Products/>}/>
+            <Route path='/products/details' element={<ProductDetails/>}/>
           </Routes>
         <Footer/>
       </BrowserRouter>

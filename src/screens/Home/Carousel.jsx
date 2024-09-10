@@ -17,7 +17,7 @@ export function CarouselComponent() {
                     </div>
 
                 </div>
-                <h1 className=" text-white lg:text-7xl text-6xl font-bold">Seize The<br/> Viewable<br/> future<br/></h1>
+                <h1 className=" text-white lg:text-7xl text-4xl font-bold">Seize The<br/> Viewable<br/> future<br/></h1>
                 <p className="text-white lg:text-2xl mt-10">Powerbank sharing is the future of outdoor charging solution,<br/> join us to dive in the potential market</p>
 
                 <div className=" mt-10 flex flex-row">
@@ -45,8 +45,8 @@ export function CarouselComponent() {
                     </div>
 
                 </div>
-                <h1 className=" text-white lg:text-7xl text-6xl font-bold">Joint<br/> Entrepreneurship</h1>
-                <p className="text-white lg:text-2xl mt-10">Powerbank sharing is the future of outdoor charging solution,<br/> join us to dive in the potential market</p>
+                <h1 className=" text-white lg:text-7xl text-4xl font-bold">Joint<br/> Entrepreneurship</h1>
+                <p className="text-white lg:text-2xl mt-10">Join us in making charging easy<br/> join us to dive in the potential market</p>
 
                 <div className=" mt-10 flex flex-row">
                     <div className="p-5 bg-yellow-400 rounded-sm pl-10">

@@ -39,11 +39,11 @@ function Footer() {
             <div className="flex-1 border-t lg:border-l lg:border-t-0 border-gray-600 lg:pl-10 py-5">
                 <h1 className="text-white font-bold mb-3 text-3xl">Quick Links</h1>
                 <ul className="text-gray-200 space-y-2">
-                    <li>About Mopawa</li>
-                    <li>Products</li>
-                    <li>Customization</li>
-                    <li>FAQs</li>
-                    <li>Privacy Policy</li>
+                    <li><a href="/about">About Mopawa</a></li>
+                    <li> <a href="/products">Products</a></li>
+                    <li><a href="/customs">Customization</a></li>
+                    <li><a href="/faq">FAQs</a></li>
+                    <li> <a href="/about">Privacy Policy</a></li>
                 </ul>
             </div>
 
