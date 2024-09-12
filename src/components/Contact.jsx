@@ -6,7 +6,7 @@ function Contact() {
     <div className=" lg:flex p-5">
         <div className=" flex flex-col flex-1">
             <h1 className=" font-bold text-3xl mb-5">GET IN TOUCH</h1>
-            <p>Interested in sharing power bank station business? Or want to know more about ChargeEight? Simply submit a message to us. We'll get back to you within 24 hours. You can also contact us through the below information to get a prompt response.</p>
+            <p>Interested in sharing power bank station business? Or want to know more about Mopawa? Simply submit a message to us. We'll get back to you within 24 hours. You can also contact us through the below information to get a prompt response.</p>
             <div className=" flex items-center mt-5">
                 <IoMdCall className=" mr-5" size={25}/>
                 <p className=" font-bold text-xl">+254 708 999 666</p>
