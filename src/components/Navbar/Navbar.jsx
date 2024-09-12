@@ -43,11 +43,11 @@ function Navbar() {
           <NavLink to="/products" className={({ isActive }) => isActive ? 'text-white bg-yellow-400 p-2 rounded-md' : `${isScrolled ? "text-black" : "text-white"} py-2 px-3 hover:bg-yellow-400 hover:rounded-md hover:text-white`}>Products</NavLink>
           <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible">
             <ul className="py-2">
-              <li><NavLink to="/products/product1" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Desktop station</NavLink></li>
-              <li><NavLink to="/products/product2" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Joint Entrepreneurship</NavLink></li>
+              <li><NavLink to="/desktopstation" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Desktop station</NavLink></li>
+              <li><NavLink to="/joint" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Joint Entrepreneurship</NavLink></li>
               <li><NavLink to="/products/product3" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Stand</NavLink></li>
               <li><NavLink to="/products/product4" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Powerbanks</NavLink></li>
-              <li><NavLink to="/products/product5" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Admin panel</NavLink></li>
+              <li><a href="/products/product5" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Admin panel</a></li>
             </ul>
           </div>
         </div>
