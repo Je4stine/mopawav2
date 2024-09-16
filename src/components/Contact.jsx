@@ -1,5 +1,6 @@
 import { IoMdCall } from "react-icons/io";
 import { BsWhatsapp } from "react-icons/bs";
+import { MdOutlineMail } from "react-icons/md";
 
 function Contact() {
   return (
@@ -14,6 +15,10 @@ function Contact() {
             <div className=" flex items-center mt-5">
                 <BsWhatsapp className=" mr-5" size={25}/>
                 <p className=" font-bold text-xl">+254 708 999 666</p>
+            </div>
+            <div className=" flex items-center mt-5">
+                <MdOutlineMail className=" mr-5" size={25}/>
+                <p className=" font-bold text-xl">info@mopawa.co.ke</p>
             </div>
         </div>
 
@@ -48,6 +53,12 @@ function Contact() {
                 <div>
                     <label htmlFor="" className=" mb-5"> Message</label>
                     <textarea className="p-2 rounded-md w-full"  rows="4"cols="50" />
+                </div>
+
+                <div className=" mt-3">
+                    <button className=" bg-yellow-400 text-white px-5 py-3 rounded-md">
+                        Submit
+                    </button>
                 </div>
         </div>
     </div>

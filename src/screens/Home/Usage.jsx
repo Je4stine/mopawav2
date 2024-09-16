@@ -7,9 +7,9 @@ function Usage() {
         <div className=" bg-gray-200 p-5 flex flex-col flex-1 items-center justify-center">
             <h1 className=" text-3xl font-bold my-5">Ultra Easy to Use</h1>
             <p>
-        A shared power bank rental station is the most convenient way to charge your phone when you’re out nowadays. All you need to do is scan the code on the machine, then get the power bank and start charging. You’re free to go anywhere instead of sticking around the socket while charging.
+        A shared power bank rental station is the most convenient way to charge your phone when you’re out nowadays. All you need to do is make a payment via mpesa using the paybill on the machine, then get the power bank and start charging. You’re free to go anywhere instead of sticking around the socket while charging.
 
-        When you finish charging, return the power bank to the nearest kiosk on your app; You don’t have to return to where you borrowed the power bank.</p>
+        When you finish charging, return the power bank to the nearest charging station; You don’t have to return to where you borrowed the power bank.</p>
         </div>
 
         <div className=" flex flex-col flex-grow flex-1">
