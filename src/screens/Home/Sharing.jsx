@@ -4,7 +4,7 @@ function Sharing() {
     <div className=" py-10 lg:px-[120px]">
         <div className=" flex flex-col items-center lg:px-[200px] px-10">
             <h1 className=" text-3xl font-bold mb-5 text-center">Sharing Power Bank Rental Station One-Stop-Solution Provider</h1>
-            <p className=" text-center">ChargeEight is a top phone charging station one-stop solution supplier. Our services include shared power bank station manufacturing, power bank rental app development, payment gateway integration, and management system development. Feel confident to contact us if you’re interested in the shared power bank rental business.</p>
+            <p className=" text-center">Mopawa is a top phone charging station one-stop solution supplier in East Africa. Our services include shared power bank station manufacturing, power bank rental business operation, payment gateway integration, and management system development. Feel confident to contact us if you’re interested in the shared power bank rental business.</p>
         </div>
 
         <div className=" my-10 lg:flex lg:justify-evenly"> 
