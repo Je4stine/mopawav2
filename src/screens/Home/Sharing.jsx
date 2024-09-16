@@ -22,7 +22,7 @@ function Sharing() {
                 <img src="https://chargeeight.com/wp-content/uploads/2022/11/Admin-Panel.jpg" alt="" />
                 <h2 className=" my-5 font-bold text-xl">Admin Panel</h2>
                 <p>
-                Brand owners can control their business easily with their fingertips, ChargeEight offers lifetime support..</p>
+                Partners can control their business easily with their fingertips, Mopawa offers lifetime support..</p>
             </div>
       
         </div>
