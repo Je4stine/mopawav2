@@ -9,12 +9,14 @@ import Faq from './screens/Faq/Faq'
 import Products from './screens/Products/Products'
 import ProductDetails from './screens/ProductDetails/ProductDetails'
 import Joint from './screens/Joint/Joint'
+import ScrollToTop from './utils/Scrolltop'
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop/>
         <Navbar/>
           <Routes>
             <Route path='/' element={<Home/>}/>

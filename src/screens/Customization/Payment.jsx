@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import Ethio from '../../assets/images/Ethio.png'
+import Vodacom from '../../assets/images/Vodacom.png'
 
 function Payment() {
     const responsive = {
@@ -28,17 +29,17 @@ function Payment() {
         <h1 className=" text-3xl text-center font-bold my-5">Supported payment API</h1>
         <Carousel responsive={responsive} infinite ={true} autoPlay ={true} autoPlaySpeed={2000}>  
             <div className=" flex flex-col items-center justify-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/M-PESA_LOGO-01.svg" alt="" className=" w-[200px] h-[200px]" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/M-PESA_LOGO-01.svg" alt="" className=" lg:object-cover lg:h-[200px]" />
             </div>
             {/* <div className=" flex flex-col items-center justify-center">
             <img src="https://airtel.africa/assets/images/logo/airtel-logo.png" alt="" className=" w-[200px] h-[200px]" />
             </div> */}
             <div className=" flex flex-col items-center justify-center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/MTN_Logo.svg/200px-MTN_Logo.svg.png?20190223171412" alt="" className=" w-[300px] h-[200px]"/>
+            <img src={Ethio} alt="" className="  lg:h-[100px] lg:object-cover mt-10"/>
 
             </div>
             <div className=" flex flex-col items-center justify-center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/M-PESA_LOGO-01.svg" alt="" className=" w-[300px] h-[200px]"/>
+            <img src={Vodacom} alt="" className=" lg:object-cover lg:h-[200px]"/>
 
             </div>
         </Carousel>
