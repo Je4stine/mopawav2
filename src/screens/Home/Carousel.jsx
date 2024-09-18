@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import Slide1 from '../../assets/images/chargeeight-shared-powerbabnk-station.jpg'
+import Slide1 from '../../assets/images/hero1.jpg'
 import { IoLogoYoutube } from "react-icons/io";
 
 export function CarouselComponent() {

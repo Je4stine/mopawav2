@@ -1,4 +1,5 @@
 import Operation from '../../assets/images/operation.jpg'
+import Station from '../../assets/images/station1.jpg'
 
 function Usage() {
   return (
@@ -13,7 +14,7 @@ function Usage() {
         </div>
 
         <div className=" flex flex-col flex-grow flex-1">
-          <img src="http://www.zhongdianhexin.com/wp-content/uploads/2023/05/2023052401525872.png" alt="" className=" object-cover" />
+          <img src={Station} alt="" className=" object-cover" />
         </div>
     </div>
 
