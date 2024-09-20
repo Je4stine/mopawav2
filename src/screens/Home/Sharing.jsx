@@ -1,3 +1,6 @@
+import one from '../../assets/images/331.jpg'
+import mpesa from '../../assets/images/mpesa.jpg'
+
 
 function Sharing() {
   return (
@@ -9,12 +12,12 @@ function Sharing() {
 
         <div className=" my-10 lg:flex lg:justify-evenly"> 
             <div className=" flex flex-col items-center px-20">
-                <img src="https://chargeeight.com/wp-content/uploads/2022/11/power-bank-stations.jpg" alt="" className=" lg:w-[320px] lg:h-[200px] object-cover" />
+                <img src={one} alt="" className=" lg:w-[320px] lg:h-[200px] object-cover" />
                 <h2 className=" my-5 font-bold text-xl">Charging Stations with Power Banks</h2>
                 <p>Mopawa offers various types of power bank rental stations for different usage venues.</p>
             </div>
             <div className=" flex flex-col items-center px-20">
-                <img src="https://chargeeight.com/wp-content/uploads/2022/11/Powerbank-station-Payment.jpg" alt="" className=" lg:w-[320px] lg:h-[200px] object-cover"/>
+                <img src={mpesa} alt="" className=" lg:w-[320px] lg:h-[200px] object-cover"/>
                 <h2 className=" my-5 font-bold text-xl">Payment gateaway intergration</h2>
                 <p> We already have already integrated payment gateways for Ethio Telecom, Safaricom mpesa and Vodacom Tanzania </p>
             </div>
