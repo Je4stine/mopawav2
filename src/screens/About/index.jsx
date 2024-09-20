@@ -21,15 +21,15 @@ function About() {
 
 
 
-    <div className=" bg-gray-200 lg:flex lg:justify-around lg:pl-[15%] py-10 lg:pr-[10%]">
-          <div className=" p-5">
-              <h1 className="lg:text-4xl font-bold mb-5">About Mopawa</h1>
+    <div className=" bg-gray-200 lg:flex lg:items-center lg:justify-center p-10">
+          <div className=" p-5 flex flex-col flex-1 items-center">
+              <h1 className="lg:text-4xl text-2xl font-bold mb-5">About Mopawa</h1>
               <p>
               Mopawa is the global brand of Shenzhen Zhongdianhexin Technology Co., Ltd. One of the biggest shared power bank manufacturers. Established in 2014, our company is a high-tech company based on the Internet and IoT technology, industrial characteristics, ecological environment, and big data services. The company has been developed into a competitive high-tech enterprise of shared power bank stations integrating R & D, production, operation, sales, and service. We focus on the R & D and application of high-new technology and inspire consumers to bring new ways of technological life with wisdom and love.
               </p>
           </div>
          
-          <div>
+          <div className="flex flex-col flex-1 items-center">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/gQrFAFMuiYc?si=VDnxB3M0th5Fcfvb&amp;controls=0&amp;start=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
     </div>
