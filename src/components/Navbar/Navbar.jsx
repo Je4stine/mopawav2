@@ -31,10 +31,10 @@ function Navbar() {
       </div>
 
       {/* Logo Section */}
-      <div className="flex items-center">
+      <a href="/" className="flex items-center">
         <img src={Mopawalogo} alt="logo" className="h-[50px] mr-2" />
         <p className={`font-bold text-2xl lg:text-3xl ${isScrolled ? "text-black" : "text-white"}`}>Mopawa</p>
-      </div>
+      </a>
 
       {/* Navigation Links */}
       <nav className={`font-bold lg:flex items-center hidden `}>
