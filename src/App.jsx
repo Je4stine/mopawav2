@@ -10,6 +10,7 @@ import Products from './screens/Products/Products'
 import ProductDetails from './screens/ProductDetails/ProductDetails'
 import Joint from './screens/Joint/Joint'
 import ScrollToTop from './utils/Scrolltop'
+import BlogDetails from './screens/Blogs/BlogDetails'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='/joint' element={<Joint/>}/>
             <Route path='/desktopstation' element={<Joint/>}/>
             <Route path='/products/details' element={<ProductDetails/>}/>
+            <Route path='/blog/:id/:name' element={<BlogDetails/>}/>
           </Routes>
         <Footer/>
       </BrowserRouter>

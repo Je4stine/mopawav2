@@ -2,9 +2,8 @@ import { useState } from "react";
 
 import { LuPlus, LuMinus} from "react-icons/lu";
 
-import Powerbank from '../../assets/images/Powerbanks.png'
 
-function FaqComponent({ question, details}) {
+function FaqComponent({ question, details, image}) {
     const [isOpen, setIsOpen] = useState(false)
 
     const handleClick =()=>{
@@ -22,7 +21,7 @@ function FaqComponent({ question, details}) {
     {
         isOpen?
         <div className=" mt-5 flex items-center lg:w-[70vw] w-[90vw]">
-            <img src={Powerbank} alt="" className=" h-[200px]"/>
+            <img src={image} alt="" className=" h-[200px]"/>
             <p>{details}</p>
         </div>
         :
