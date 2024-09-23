@@ -1,6 +1,49 @@
 import { useLocation } from "react-router-dom"
+import { useState } from "react";
 
 function BlogDetails() {
+  const [comment, setComment] = useState("")
+  const [author, setAuthor] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('');
+
+  const {state} = useLocation();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const url = 'https://blog.mopawa.co.ke/wp-json/wp/v2/comments';
+
+    const commentData = {
+      post: state.id,        
+      author_name: author,  
+      author_email: email, 
+      content: comment      
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(commentData),
+      });
+
+      if (response.ok) {
+        setMessage('Comment added successfully!');
+        setAuthor('');
+        setEmail('');
+        setComment('');
+      } else {
+        setMessage('Failed to add comment.');
+      }
+    } catch (error) {
+      setMessage('An error occurred. Please try again.');
+    }
+  };
+
+
 
   function formatDate(dateString) {
     const date = new Date(dateString);
@@ -21,7 +64,7 @@ function BlogDetails() {
   }
 
 
-  const {state} = useLocation();
+  
   return (
     <div className=" flex flex-col items-center">
        <div className=" bg-black h-[80px] w-full"></div>
@@ -49,29 +92,34 @@ function BlogDetails() {
       <div className="lg:w-[70vw] px-5" dangerouslySetInnerHTML={{ __html: state.paragraph}}> 
       </div>
       <hr className="w-full my-10"/>
-      <div className=" my-10">
+
+      <div className=" my-10 px-5">
         <h1 className=" font-bold my-5">Post a Comment</h1>
         <div>
+
+
           <div>
                 <label htmlFor="" className=" mb-5"> Comment</label>
-              <textarea className="p-2 rounded-md w-full"  rows="10"cols="50" />
+              <textarea className="p-2 rounded-md w-full"  rows="10"cols="50" onChange={(e) => setComment(e.target.value)}/>
           </div>
 
           <div>
               <div>
                   <label htmlFor="" className=" mb-5"> Name*</label>
-                  <input type="text" title="Email" className="p-2 rounded-md w-full"  />
+                  <input type="text" title="Email" className="p-2 rounded-md w-full" onChange={(e) => setAuthor(e.target.value)} />
                 </div>
+
                  <div>
                   <label htmlFor="" className=" mb-5"> Email*</label>
-                  <input type="text" title="Email" className="p-2 rounded-md w-full"  />
+                  <input type="text" title="Email" className="p-2 rounded-md w-full"  onChange={(e) => setEmail(e.target.value)}/>
                  </div>
+
                   <div>
                   <label htmlFor="" className=" mb-5"> Website</label>
                   <input type="text" title="Email" className="p-2 rounded-md w-full"  />
                 </div>
                 <div className=" mt-3">
-                    <button className=" bg-yellow-400 text-white px-5 py-3 rounded-md">
+                    <button onClick={handleSubmit} className=" bg-yellow-400 text-white px-5 py-3 rounded-md">
                         Submit
                     </button>
                 </div>
