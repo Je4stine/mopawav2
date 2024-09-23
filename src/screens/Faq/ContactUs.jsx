@@ -6,7 +6,7 @@ import { FaHandshake } from "react-icons/fa";
 
 function ContactUs() {
   return (
-    <div className=" ">
+    <div className=" my-5">
         <div className=" flex lg:flex-row flex-col mt-10 justify-around items-center">
             <div className=" relative flex flex-col items-center flex-1 px-[100px]">
                 <div className=" absolute bg-black opacity-50 top-0 w-[200px] h-[200px]">

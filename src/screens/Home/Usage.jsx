@@ -1,4 +1,4 @@
-import Operation from '../../assets/images/operation.jpg'
+import Operation from '../../assets/images/operation2.jpg'
 import Station from '../../assets/images/station1.jpg'
 
 function Usage() {
