@@ -46,7 +46,38 @@ function BlogDetails() {
             </div>
           </div> 
       </div>
-      <div className="lg:w-[70vw]" dangerouslySetInnerHTML={{ __html: state.paragraph}}> 
+      <div className="lg:w-[70vw] px-5" dangerouslySetInnerHTML={{ __html: state.paragraph}}> 
+      </div>
+      <hr className="w-full my-10"/>
+      <div className=" my-10">
+        <h1 className=" font-bold my-5">Post a Comment</h1>
+        <div>
+          <div>
+                <label htmlFor="" className=" mb-5"> Comment</label>
+              <textarea className="p-2 rounded-md w-full"  rows="10"cols="50" />
+          </div>
+
+          <div>
+              <div>
+                  <label htmlFor="" className=" mb-5"> Name*</label>
+                  <input type="text" title="Email" className="p-2 rounded-md w-full"  />
+                </div>
+                 <div>
+                  <label htmlFor="" className=" mb-5"> Email*</label>
+                  <input type="text" title="Email" className="p-2 rounded-md w-full"  />
+                 </div>
+                  <div>
+                  <label htmlFor="" className=" mb-5"> Website</label>
+                  <input type="text" title="Email" className="p-2 rounded-md w-full"  />
+                </div>
+                <div className=" mt-3">
+                    <button className=" bg-yellow-400 text-white px-5 py-3 rounded-md">
+                        Submit
+                    </button>
+                </div>
+          </div>
+
+        </div>
       </div>
 
     </div>

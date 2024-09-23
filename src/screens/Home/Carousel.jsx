@@ -77,7 +77,8 @@ export function CarouselComponent() {
                 </div>
 
                 <h1 className=" text-white lg:text-7xl text-4xl font-bold">The leading<br/> powerbank provider <br/> in East Africa</h1>
-               
+                <p className="text-white lg:text-2xl mt-10">Interview with KBC</p>
+
 
                 <div className=" mt-10 flex flex-row">
                     <a href="https://www.youtube.com/embed/nSYqmHhfez4?si=yFoxvCdxKHohSJNQ" target="_blank" className="p-5 bg-yellow-400 rounded-sm flex items-center">
