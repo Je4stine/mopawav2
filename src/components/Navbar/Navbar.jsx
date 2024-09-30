@@ -45,9 +45,9 @@ function Navbar() {
             <ul className="py-2">
               <li><NavLink to="/desktopstation" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Desktop station</NavLink></li>
               <li><NavLink to="/joint" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Joint Entrepreneurship</NavLink></li>
-              <li><NavLink to="/products/product3" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Stand</NavLink></li>
-              <li><NavLink to="/products/product4" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Powerbanks</NavLink></li>
-              <li><a href="/products/product5" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Admin panel</a></li>
+              <li><NavLink to="/stand" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Stand</NavLink></li>
+              <li><NavLink to="/powerbank" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Powerbanks</NavLink></li>
+              <li><a href="/products/product5" target="_blank" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Admin panel</a></li>
             </ul>
           </div>
         </div>

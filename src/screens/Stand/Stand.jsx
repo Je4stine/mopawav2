@@ -1,6 +1,7 @@
 import Hero from './Hero'
 
-function Station() {
+
+function Stand() {
   return (
     <div>
       <Hero/>
@@ -8,4 +9,4 @@ function Station() {
   )
 }
 
-export default Station
+export default Stand

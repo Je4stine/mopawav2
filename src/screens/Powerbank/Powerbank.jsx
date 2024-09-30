@@ -1,11 +1,12 @@
 import Hero from './Hero'
 
-function Station() {
+
+function Powerbank() {
   return (
     <div>
-      <Hero/>
+        <Hero/>
     </div>
   )
 }
 
-export default Station
+export default Powerbank

@@ -44,9 +44,9 @@ function Blogs() {
       <div className=" grid lg:grid-cols-3 grid-cols-1 place-items-center gap-[6px] mt-10">
         {
           allBlogs.length == 0 ?
-          <div className="text-center">
-        <Spinner aria-label="Center-aligned Extra large spinner example"  size="xl"/>
-      </div>
+          <div className="flex justify-center items-center w-full h-[300px]">
+            <Spinner aria-label="Center-aligned Extra large spinner example" size="xl" />
+          </div>
       :
           allBlogs.map((item, index)=>{
             return(

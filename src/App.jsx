@@ -11,6 +11,9 @@ import ProductDetails from './screens/ProductDetails/ProductDetails'
 import Joint from './screens/Joint/Joint'
 import ScrollToTop from './utils/Scrolltop'
 import BlogDetails from './screens/Blogs/BlogDetails'
+import Stand from './screens/Stand/Stand'
+import Powerbank from './screens/Powerbank/Powerbank'
+import Station from './screens/DesktopStation/Station'
 
 function App() {
 
@@ -27,7 +30,10 @@ function App() {
             <Route path='/faq' element={<Faq/>}/>
             <Route path='/products' element={<Products/>}/>
             <Route path='/joint' element={<Joint/>}/>
-            <Route path='/desktopstation' element={<Joint/>}/>
+            <Route path='/station' element={<Joint/>}/>
+            <Route path='/stand' element={<Stand/>}/>
+            <Route path='/powerbank' element={<Powerbank/>}/>
+            <Route path='/desktopstation' element={<Station/>}/>
             <Route path='/products/details' element={<ProductDetails/>}/>
             <Route path='/blog/:id/:name' element={<BlogDetails/>}/>
           </Routes>

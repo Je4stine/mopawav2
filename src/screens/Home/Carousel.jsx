@@ -5,7 +5,7 @@ import { IoLogoYoutube } from "react-icons/io";
 export function CarouselComponent() {
 
   return (
-    <div className="h-[80vh]">
+    <div className="h-[85vh]">
       <Carousel pauseOnHover>
         <div className=" h-full relative">
             <div className=" absolute h-full w-full bg-black opacity-50"></div>
