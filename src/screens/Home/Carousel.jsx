@@ -78,7 +78,7 @@ export function CarouselComponent({scrollToContacts}) {
                 </div>
 
                 <h1 className=" text-white lg:text-7xl text-4xl font-bold">The leading<br/> powerbank provider <br/> in East Africa</h1>
-                <p className="text-white lg:text-2xl mt-10">Interview with KBC</p>
+                <p className="text-white lg:text-2xl mt-10">An Interview with KBC</p>
 
 
                 <div className=" mt-10 flex flex-row">
