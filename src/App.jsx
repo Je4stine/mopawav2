@@ -14,6 +14,7 @@ import BlogDetails from './screens/Blogs/BlogDetails'
 import Stand from './screens/Stand/Stand'
 import Powerbank from './screens/Powerbank/Powerbank'
 import Station from './screens/DesktopStation/Station'
+import Eightslot from './screens/Products/Eightslot'
 
 function App() {
 
@@ -36,6 +37,8 @@ function App() {
             <Route path='/desktopstation' element={<Station/>}/>
             <Route path='/products/details' element={<ProductDetails/>}/>
             <Route path='/blog/:id/:name' element={<BlogDetails/>}/>
+            <Route path='/eightslot' element={<Eightslot/>}/>
+
           </Routes>
         <Footer/>
       </BrowserRouter>
