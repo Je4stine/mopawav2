@@ -6,7 +6,7 @@ function eightslot() {
       <div className=" h-[80px] bg-black">
       </div>
       <div className=" min-h-[20vh]">
-          <div className=' flex items-center justify-center'>
+          <div className=' lg:flex items-center justify-center p-4'>
               <img src={Eight} alt="" className=' flex flex-1'/>
               <div  className=' flex flex-col flex-1'>
               <h1 className=' font-bold text-3xl mb-5'>8 slot Desktop Station</h1>
@@ -15,7 +15,7 @@ function eightslot() {
                 Usually, one to two sets are placed in one scene. The display can be LCD screen or lightbox for advertising.
 
                 </p>
-                <ul>
+                <ul className=' list-disc'>
                 <li>4G Stable signal</li>
                 <li>Imported ST Micro chip</li>
                 <li>1280*800 high-definition</li>

@@ -14,8 +14,8 @@ function Footer() {
                 </div>
                 <p className="text-gray-400">
                     Mopawa Software Limited<br />
-                    Cassamia apartments<br />
-                    Ngong' Road<br />
+                    Victoria Towers<br />
+                    Kilimanjaro Road<br />
                     Email: info@mopawa.co.ke<br />
                     Phone: +254 708 999 666<br />
                 </p>
