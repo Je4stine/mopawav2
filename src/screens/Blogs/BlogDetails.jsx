@@ -1,5 +1,7 @@
 import { useLocation } from "react-router-dom"
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function BlogDetails() {
   const [comment, setComment] = useState("")
@@ -8,6 +10,8 @@ function BlogDetails() {
   const [message, setMessage] = useState('');
 
   const {state} = useLocation();
+  const notify = () => toast("Your comment has been posted!");
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,6 +33,8 @@ function BlogDetails() {
         },
         body: JSON.stringify(commentData),
       });
+
+      notify()
 
       if (response.ok) {
         setMessage('Comment added successfully!');
@@ -122,6 +128,7 @@ function BlogDetails() {
                     <button onClick={handleSubmit} className=" bg-yellow-400 text-white px-5 py-3 rounded-md">
                         Submit
                     </button>
+                    <ToastContainer />
                 </div>
           </div>
 

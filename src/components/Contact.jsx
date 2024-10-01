@@ -1,8 +1,12 @@
 import { IoMdCall } from "react-icons/io";
 import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+    const notify = () => toast("Your message has been received, we will call you back");
+
   return (
     <div className=" lg:flex p-5">
         <div className=" flex flex-col flex-1">
@@ -56,9 +60,10 @@ function Contact() {
                 </div>
 
                 <div className=" mt-3">
-                    <button className=" bg-yellow-400 text-white px-5 py-3 rounded-md">
+                    <button onClick={notify} className=" bg-yellow-400 text-white px-5 py-3 rounded-md">
                         Submit
                     </button>
+                    <ToastContainer />
                 </div>
         </div>
     </div>

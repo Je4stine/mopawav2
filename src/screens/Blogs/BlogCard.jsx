@@ -8,7 +8,7 @@ function BlogCard({
     <div>
         <div className=" w-[380px]">
             <img className=" h-[500px] w-full object-cover" src={image} alt="" />
-            <div className=" h-[20px] w-full bg-yellow-300"></div>
+            <div className=" h-[10px] w-full bg-yellow-300"></div>
             <div className=" border-b border-l border-r p-2">
                 <h1 className=" text-xl font-bold">{tittle}</h1>
                 <div className=" flex items-center my-5">

@@ -1,4 +1,5 @@
 // import Carousel from './Carousel'
+import React, { useRef } from 'react';
 
 import { CarouselComponent } from "./Carousel"
 import Sharing from './Sharing'
@@ -9,15 +10,23 @@ import Venue from "./Venue"
 import Contact from "../../components/Contact"
 
 function Home() {
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
-     <CarouselComponent/>
+     <CarouselComponent scrollToContacts={scrollToContact}/>
      <Sharing/>
      <Stations/>
      <Stat/>
      <Usage/>
      <Venue/>
-     <Contact/>
+     <Contact ref={contactRef}/>
     </div>
   )
 }

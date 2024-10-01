@@ -2,7 +2,7 @@ import { Carousel } from "flowbite-react";
 import Slide1 from '../../assets/images/hero1.jpg'
 import { IoLogoYoutube } from "react-icons/io";
 
-export function CarouselComponent() {
+export function CarouselComponent({scrollToContacts}) {
 
   return (
     <div className="h-[85vh]">
@@ -23,11 +23,12 @@ export function CarouselComponent() {
                 <p className="text-white lg:text-2xl mt-10">Powerbank sharing is the future of outdoor charging solution,<br/> join us to dive in the potential market</p>
 
                 <div className=" mt-10 flex flex-row">
-                    <div className="p-5 bg-yellow-400 rounded-sm pl-10">
+                    <a href="/about" className="p-5 bg-yellow-400 rounded-sm">
                         <p className=" text-white">KNOW MORE</p>
-                    </div>
+                    </a>
+
                     <div className=" w-[20px]"></div>
-                    <div className="p-5 border border-white rounded-sm">
+                    <div onClick={scrollToContacts} className="p-5 border border-white rounded-sm hover:cursor-pointer ">
                         <p className="text-white">CONTACT US</p>
                     </div>
                 </div>
@@ -51,9 +52,9 @@ export function CarouselComponent() {
                 <p className="text-white lg:text-2xl mt-10">Join us in making charging easy<br/> join us to dive in the potential market</p>
 
                 <div className=" mt-10 flex flex-row">
-                    <div className="p-5 bg-yellow-400 rounded-sm">
+                    <a href="/joint" className="p-5 bg-yellow-400 rounded-sm">
                         <p className=" text-white">KNOW MORE</p>
-                    </div>
+                    </a>
                     <div className=" w-[20px]"></div>
 
                 </div>

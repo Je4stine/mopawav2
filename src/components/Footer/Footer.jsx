@@ -21,18 +21,20 @@ function Footer() {
                 </p>
 
                 <div className=" flex flex-row items-center mt-5">
-                    <div className="border border-white p-2"><FaFacebookF color="white" size={27}/></div>
-                    <div className="border border-white p-2"><FaInstagramSquare color="white" size={27}/></div>
-                    <div className="border border-white p-2"><FaXTwitter color="white" size={27}/></div>
+                    <a href="https://www.facebook.com/mopawasoftware" target="_blank" className="border border-white p-2"><FaFacebookF color="white" size={27}/></a>
+                    <a href="https://www.instagram.com/mopawasoftwareke/" target="_blank" className="border border-white p-2"><FaInstagramSquare color="white" size={27}/></a>
+                    <a href="https://x.com/MopawaLtd" target="_blank" className="border border-white p-2"><FaXTwitter color="white" size={27}/></a>
                 </div>
             </div>
 
             {/* Second Column with a Border */}
             <div className="flex-1 border-t lg:border-l lg:border-t-0 border-gray-600 lg:pl-10 py-5">
                 <p className="text-white font-bold mb-3 text-3xl">Latest Posts</p>
-                <p className="text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta autem eveniet ab dolor, ipsum perferendis nisi nesciunt alias necessitatibus deserunt ad similique at. Error minima neque laudantium enim fugit aut.
-                </p>
+                <a href="/blog" className="text-gray-400 hover:underline">
+                    <strong>What is Power Bank Sharing and How to Start This Business? </strong>
+                    <br/> <br/>
+                    Before looking into what “sharing power bank station” is, we need to figure out what is sharing economy, because sharing power bank is definitely a part of sharing economy. In this...              
+                </a>
             </div>
 
             {/* Third Column with a Border */}
@@ -52,6 +54,9 @@ function Footer() {
                 <h1 className="text-white font-bold mb-3 text-3xl">Newsletter</h1>
                 <p className="text-gray-400 mb-3">Subscribe for more news</p>
                 <input type="text" title="Email" className="p-2 rounded-md w-full" placeholder="Your email*" />
+                <button className=" bg-white rounded-md p-3 mt-5 font-bold">
+                    Submit
+                </button>
             </div>
         </div>
 

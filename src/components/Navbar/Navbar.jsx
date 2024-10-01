@@ -3,10 +3,16 @@ import { IoSearch } from "react-icons/io5";
 import { MdMenu } from "react-icons/md";
 import Mopawalogo from '../../assets/images/mopawalogo.png';
 import { useEffect, useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [selected, setSelected] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  const openSearch =()=>{
+    setSearchOpen(!searchOpen)
+  }
 
   useEffect(() => {
     function handleScroll() {
@@ -29,6 +35,7 @@ function Navbar() {
       <div className="lg:hidden">
         <MdMenu size={40} onClick={handleMenu} className={`${isScrolled ? "text-black" : "text-white"} ml-2`} />
       </div>
+
 
       {/* Logo Section */}
       <a href="/" className="flex items-center">
@@ -59,7 +66,20 @@ function Navbar() {
 
       {/* Search and Menu for Large Screens */}
       <div className="hidden lg:flex items-center">
-        <IoSearch size={30} className={`${isScrolled ? "text-black" : "text-white"} mr-4`} />
+        {
+          
+        }
+        <div>
+          {
+            searchOpen?<input type="text" className=" rounded-xl mr-5" placeholder="Search...."/>:<div/>
+
+          }
+        </div>
+        <div onClick={openSearch}>
+          {
+            searchOpen? <IoMdClose size={30} className={`${isScrolled ? "text-black" : "text-white"} mr-4`} />:<IoSearch size={30} className={`${isScrolled ? "text-black hover:cursor-pointer" : "text-white hover:cursor-pointer"} mr-4`} />
+          }
+        </div>
         <MdMenu size={30} className={`${isScrolled ? "text-black" : "text-white"}`} />
       </div>
 
