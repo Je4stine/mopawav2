@@ -9,7 +9,7 @@ function eightslot() {
           <div className=' flex items-center justify-center'>
               <img src={Eight} alt="" className=' flex flex-1'/>
               <div  className=' flex flex-col flex-1'>
-              <h1>8 slot Desktop Station</h1>
+              <h1 className=' font-bold text-3xl mb-5'>8 slot Desktop Station</h1>
               <p>Applicable to: catering, bar, hotel, guide desk, and other small and medium-sized scenes.
 
                 Usually, one to two sets are placed in one scene. The display can be LCD screen or lightbox for advertising.
