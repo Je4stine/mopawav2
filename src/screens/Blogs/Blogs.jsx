@@ -3,6 +3,7 @@ import BlogCard from './BlogCard'
 import { useState, useEffect } from "react"
 import { Spinner } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Blogs() {
   const BaseUrl = "https://blog.mopawa.co.ke/"
@@ -39,6 +40,11 @@ function Blogs() {
 
   return (
     <div>
+       <Helmet>
+        <title>Blogs </title>
+        <meta name="description" content="News, tips and reviews about our product " />
+        <meta name="keywords" content="shared power bank, rental powerbank, mopawa, power bank" />
+      </Helmet>
       <Hero/>
       {/* <div className=" grid lg:grid-cols-3 grid-cols-1 place-items-center gap-6 mt-10"> */}
       <div className=" grid lg:grid-cols-3 grid-cols-1 place-items-center gap-[6px] mt-10">

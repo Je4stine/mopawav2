@@ -4,12 +4,18 @@ import { PiBookOpenTextLight } from "react-icons/pi";
 import { IoDiamondSharp } from "react-icons/io5";
 import Contact from '../../components/Contact'
 // import Aboutimg from '../../assets/images/2668382.jpg'
+import { Helmet } from "react-helmet";
 
 function About() {
   
 
   return (
     <>
+     <Helmet>
+        <title>About Us </title>
+        <meta name="description" content=" Best Sharing Power Bank Staion Manufacturer. Reliable Power Bank Rental Service Provider.  " />
+        <meta name="keywords" content="shared power bank, rental powerbank, mopawa, power bank" />
+      </Helmet>
     <div className=' h-[50vh] w-[100vw] z-1 relative'>
         <div className=' h-[50vh] w-[100vw] z-1 absolute bg-black opacity-50'></div>
             <img src="https://kinsta.com/wp-content/uploads/2021/11/about-us-page-1024x512.png" alt=' Hero section' className=' w-[100vw] h-[50vh] object-cover '/>

@@ -1,6 +1,7 @@
 import Hero from './Hero'
 import FaqComponent from './FaqComponent'
 import ContactUs from "./ContactUs"
+import { Helmet } from 'react-helmet'
 
 
 function Faq() {
@@ -75,6 +76,11 @@ function Faq() {
   ]
   return (
     <div>
+       <Helmet>
+        <title>FAQs </title>
+        <meta name="description" content=" Most asked questions by clients and users of the system are answered here  " />
+        <meta name="keywords" content="shared power bank, rental powerbank, mopawa, power bank" />
+      </Helmet>
       <Hero/>
       <div className=' my-10'>
         <h1 className=' text-3xl font-bold text-center'>
