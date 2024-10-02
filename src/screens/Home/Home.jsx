@@ -22,7 +22,7 @@ function Home() {
   return (
     <div>
        <Helmet>
-        <title>Mopawa Software Limited | Rental power banks services</title>
+        <title>Homepage | Mopawa Software Limited</title>
         <meta name="description" content="Mopawa Software Limited is a power bank rental company based in Kenya, that deal in Portable rental power banks  " />
         <meta name="keywords" content="shared power bank, rental powerbank, mopawa, power bank" />
       </Helmet>
