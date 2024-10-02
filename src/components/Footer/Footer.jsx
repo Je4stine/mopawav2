@@ -1,8 +1,21 @@
 import Logo from "../../assets/images/mopawalogo.png"
 import { FaFacebookF, FaInstagramSquare, } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useState, useEffect } from "react";
 
 function Footer() {
+    const [curretYear, setCurrentYear] = useState("")
+
+    const getYear =()=>{
+        const date = new Date()
+        const year = date.getFullYear()
+        setCurrentYear(year)
+    }
+
+    useEffect(()=>{
+        getYear()
+    },[])
+
  return (
     <div className="z-[1] w-full ">
         <div className="lg:flex lg:flex-row lg:justify-around bg-black p-10">
@@ -45,7 +58,7 @@ function Footer() {
                     <li> <a href="/products">Products</a></li>
                     <li><a href="/customs">Customization</a></li>
                     <li><a href="/faq">FAQs</a></li>
-                    <li> <a href="/about">Privacy Policy</a></li>
+                    <li> <a href="/privacy-policy">Privacy Policy</a></li>
                 </ul>
             </div>
 
@@ -61,7 +74,7 @@ function Footer() {
         </div>
 
         <div className=" bg-black flex items-center justify-center text-gray-400 h-[100px]">
-            <p>Copyright © 2024 Mopawa - Rental Power banks! All Rights Reserved.</p>
+            <p>Copyright © {curretYear} Mopawa - Rental Power banks! All Rights Reserved.</p>
         </div>
     </div>
 )}

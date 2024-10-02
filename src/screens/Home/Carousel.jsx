@@ -29,7 +29,7 @@ export function CarouselComponent({scrollToContacts}) {
 
                     <div className=" w-[20px]"></div>
                     <div onClick={scrollToContacts} className="p-5 border border-white rounded-sm hover:cursor-pointer ">
-                        <p className="text-white">CONTACT US</p>
+                        <a href="/contacts" className="text-white">CONTACT US</a>
                     </div>
                 </div>
             </div>

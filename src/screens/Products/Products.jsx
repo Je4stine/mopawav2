@@ -16,8 +16,8 @@ function Products() {
       <Hero/>
       <div className=' grid lg:grid-cols-2 place-items-center lg:px-[200px] py-5 bg-gray-100'>
         <ProductsCard name="8 Slot Desktop Power Bank station" image={Eight} goToDetails="/eightslot"/>
-        <ProductsCard name="12 Slot Desktop Power Bank Station" image={Twelve}/>
-        <ProductsCard name="Stackable Power bank Station" image={Stacks}/>
+        <ProductsCard name="12 Slot Desktop Power Bank Station" image={Twelve} goToDetails="/twelveslot"/>
+        <ProductsCard name="Stackable Power bank Station" image={Stacks} goToDetails="/stackable"/>
         <ProductsCard name="Power bank Station Stand" image={Stand}/>
         <ProductsCard name="Power banks" image={Powerbank}/>
       </div>

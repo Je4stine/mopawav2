@@ -15,6 +15,11 @@ import Stand from './screens/Stand/Stand'
 import Powerbank from './screens/Powerbank/Powerbank'
 import Station from './screens/DesktopStation/Station'
 import Eightslot from './screens/Products/Eightslot'
+import Twelveslot from './screens/Products/TwelveSlot'
+import Stackable from './screens/Products/Stackable'
+import Privacy from './screens/Privacy/Privacy'
+import ContactUs from './screens/Contacts/ContactUs'
+
 
 function App() {
 
@@ -38,7 +43,10 @@ function App() {
             <Route path='/products/details' element={<ProductDetails/>}/>
             <Route path='/blog/:id/:name' element={<BlogDetails/>}/>
             <Route path='/eightslot' element={<Eightslot/>}/>
-
+            <Route path='/twelveslot' element={<Twelveslot/>}/>
+            <Route path='/stackable' element={<Stackable/>}/>
+            <Route path="/privacy-policy" element={<Privacy/>}/>
+            <Route path="/contacts" element={<ContactUs/>}/>
           </Routes>
         <Footer/>
       </BrowserRouter>

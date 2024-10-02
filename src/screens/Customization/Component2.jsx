@@ -9,8 +9,8 @@ function Component2() {
             </div>
 
             <div className=" ml-10">
-                <h1 className=" font-bold text-3xl mb-5">Mopawa Provides Customization Service to Entities Around The East Africa.</h1>
-            <p>Mopawa has cooperated with 200+ sharing power bank brands in Kenya and 100+ brands in other countries around the world. The market has already proved it’s a great business model, and it is booming in many countries. We’ve already served 50+ countries and connected worldwide payment methods. And we’re looking for partners to expand your local market.</p>
+                <h1 className=" font-bold text-3xl mb-5">Mopawa Provides Customization Service to Entities Around Kenya and East Africa.</h1>
+            <p>Mopawa has cooperated with 200+ sharing power bank brands in Kenya. The market has already proved it’s a great business model, and it is booming in many locations across the country. We’ve already served 15,0000+ customers and connected to the most popular payment methods. And we’re looking for partners to expand our local market.</p>
             </div>
         </div>
     </div>

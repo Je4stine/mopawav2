@@ -7,7 +7,7 @@ function eightslot() {
       </div>
       <div className=" min-h-[20vh]">
           <div className=' lg:flex items-center justify-center p-4'>
-              <img src={Eight} alt="" className=' flex flex-1'/>
+              <img src={Eight} alt="" className=' flex flex-1 lg:w-[100px]'/>
               <div  className=' flex flex-col flex-1'>
               <h1 className=' font-bold text-3xl mb-5'>8 slot Desktop Station</h1>
               <p>Applicable to: catering, bar, hotel, guide desk, and other small and medium-sized scenes.
@@ -15,7 +15,7 @@ function eightslot() {
                 Usually, one to two sets are placed in one scene. The display can be LCD screen or lightbox for advertising.
 
                 </p>
-                <ul className=' list-disc'>
+                <ul className=' list-disc p-10'>
                 <li>4G Stable signal</li>
                 <li>Imported ST Micro chip</li>
                 <li>1280*800 high-definition</li>

@@ -8,7 +8,7 @@ function Contact() {
     const notify = () => toast("Your message has been received, we will call you back");
 
   return (
-    <div className=" lg:flex p-5">
+    <div className=" lg:flex p-5 bg-white">
         <div className=" flex flex-col flex-1">
             <h1 className=" font-bold text-3xl mb-5">GET IN TOUCH</h1>
             <p>Interested in sharing power bank station business? Or want to know more about Mopawa? Simply submit a message to us. We'll get back to you within 24 hours. You can also contact us through the below information to get a prompt response.</p>

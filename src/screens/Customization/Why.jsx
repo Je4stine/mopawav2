@@ -17,7 +17,7 @@ function Why() {
                 <BiSolidLike color="grey" size={40} className=" mr-5"/>
                 <div>
                     <h1 className=" font-bold text-xl mb-3">Reliable</h1>
-                    <p> Mopawa is a reliable partner been cooperated with 300+ entities around the world, we strive to grow up with our clients</p>
+                    <p> Mopawa is a reliable partner been cooperated with 200+ locationss around the country, we strive to grow up with our clients</p>
                 </div>
             </div>
 
