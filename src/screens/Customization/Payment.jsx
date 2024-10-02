@@ -34,14 +34,16 @@ function Payment() {
             {/* <div className=" flex flex-col items-center justify-center">
             <img src="https://airtel.africa/assets/images/logo/airtel-logo.png" alt="" className=" w-[200px] h-[200px]" />
             </div> */}
+             <div className=" flex flex-col items-center justify-center">
+            <img src={Vodacom} alt="" className=" lg:object-cover lg:h-[200px]"/>
+
+            </div>
+            
             <div className=" flex flex-col items-center justify-center">
             <img src={Ethio} alt="" className="  lg:h-[100px] lg:object-cover mt-10"/>
 
             </div>
-            <div className=" flex flex-col items-center justify-center">
-            <img src={Vodacom} alt="" className=" lg:object-cover lg:h-[200px]"/>
-
-            </div>
+           
         </Carousel>
     </div>
   )
