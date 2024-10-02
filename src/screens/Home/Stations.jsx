@@ -19,7 +19,7 @@ function Stations() {
           </div>
 
           <div className="mr-10 px-5 py-3 border border-white rounded-md">
-            <a href="/about" className="text-white font-bold">Contact Us</a>
+            <a href="/contacts" className="text-white font-bold">Contact Us</a>
           </div>
         </div>
       </div>

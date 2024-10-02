@@ -25,9 +25,9 @@ function Carouselq() {
       };
 
   return (
-    <div className=" p-10 bg-black">
+    <div className=" p-10 bg-gray-200">
         <Carousel responsive={responsive} infinite ={true} autoPlay ={true} autoPlaySpeed={8000} swipeable={false}>  
-            <div className=" flex flex-col items-center justify-center bg-white shadow-md lg:w-[30vw] lg:h-[30vh] p-10">
+            <div className=" flex flex-col items-center justify-center bg-white shadow-md lg:w-[30vw] lg:h-min-[30vh] p-10">
                 <img className=" h-[150px]" src={Avatar} alt="avatar" />
                 <h1 className=" font-bold text-center">Mr. John Doe</h1>
                 <h1 className=" font-semibold text-center">Manager MDCCCXXIV</h1>
@@ -48,7 +48,7 @@ function Carouselq() {
                 <img className=" h-[150px]" src={Avatar} alt="avatar" />
                 <h1 className=" font-bold text-center">J. Robert Oppenheimer</h1>
                 <p className=" text-center">
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non hic voluptatum rem deleniti repellendus dignissimos cumque reprehenderit doloremque vitae quas ullam ea, sed ipsum quam magnam modi consequuntur quis?"
+                  "The customer service is really responsive and is always ready to assist with your queries"
                 </p>
             </div>
 
