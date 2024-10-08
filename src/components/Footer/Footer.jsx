@@ -73,7 +73,7 @@ function Footer() {
             </div>
         </div>
 
-        <div className=" bg-black flex items-center justify-center text-gray-400 h-[100px]">
+        <div className=" bg-gray-950 flex items-center justify-center text-gray-400 h-[100px]">
             <p>Copyright © {curretYear} Mopawa - Rental Power banks! All Rights Reserved.</p>
         </div>
     </div>

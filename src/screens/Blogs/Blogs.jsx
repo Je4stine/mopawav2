@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function Blogs() {
-  const BaseUrl = "https://blog.mopawa.co.ke/"
+  const BaseUrl = "https://blog.mopawa.co.ke"
   const [allBlogs, setAllBlogs] = useState([])
   const navigate = useNavigate()
 
@@ -17,9 +17,9 @@ function Blogs() {
 
   const getBlogs = async()=>{
       try{
-        const response = await fetch(`${BaseUrl}/wp-json/wp/v2/posts`);
+        const response = await fetch(`${BaseUrl}/wp-json/wp/v2/posts?per_page=19`);
         const blogData = await response.json();
-        setAllBlogs(blogData)
+        setAllBlogs(blogData.reverse())
         console.log(blogData[0].content)
       }catch(error){
         console.log(error)

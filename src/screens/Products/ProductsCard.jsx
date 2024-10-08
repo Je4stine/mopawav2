@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 function ProductsCard( {name, image, goToDetails}) {
   return (
-    <div className=" mx-10">
+    <div className=" flex flex-col items-center justify-center my-5">
         <img src={image} alt="" className="h-[300px]" />
-        <div className=" flex flex-col items-center pt-5 border-t border-l border-r border-gray-300 lg:w-[15vw] min-h-11">
+        <div className=" flex flex-col items-center pt-5 border-t border-l border-r border-gray-300 lg:w-[25vw] min-h-11">
             <h1 className=" font-bold text-lg text-center mx-3">{name}</h1>
             <div className=" flex items-center mt-3">
                 <FaStar size={20} color="red"/>

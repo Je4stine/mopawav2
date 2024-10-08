@@ -20,7 +20,7 @@ function Products() {
         <meta name="keywords" content="shared power bank, rental powerbank, mopawa, power bank" />
       </Helmet>
       <Hero/>
-      <div className=' grid lg:grid-cols-2 place-items-center lg:px-[200px] py-5 bg-gray-100'>
+      <div className=' grid lg:grid-cols-2 place-items-center py-5 bg-gray-100'>
         <ProductsCard name="8 Slot Desktop Power Bank station" image={Eight} goToDetails="/eightslot"/>
         <ProductsCard name="12 Slot Desktop Power Bank Station" image={Twelve} goToDetails="/twelveslot"/>
         <ProductsCard name="Stackable Power bank Station" image={Stacks} goToDetails="/stackable"/>
