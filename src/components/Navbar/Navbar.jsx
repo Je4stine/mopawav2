@@ -54,7 +54,7 @@ function Navbar() {
               <li><NavLink to="/joint" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Joint Entrepreneurship</NavLink></li>
               <li><NavLink to="/stand" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Stand</NavLink></li>
               <li><NavLink to="/powerbank" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Powerbanks</NavLink></li>
-              <li><a href="https://cdb.mopawa.co.ke/oa/#/index" target="_blank" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Admin panel</a></li>
+              <li><a href="/" target="_blank" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Admin panel</a></li>
             </ul>
           </div>
         </div>
