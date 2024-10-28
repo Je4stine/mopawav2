@@ -10,19 +10,19 @@ function Faq() {
       "id":1,
       "Question":"What is power bank sharing?",
       "image":"https://chargeeight.com/wp-content/uploads/2022/08/sharing-power-buisness.jpg",
-      "details":"Power bank sharing is a part of sharing economy. The power bank sharing business owner set up multiple power bank kiosks in several places. When people run out of their mobile phones or other electronic battery, they can simply go to the nearest kiosk, scan the QR code, and rent a power bank. Customers can take the power bank wherever they go while charging. When finished charging, they can return the power bank to the nearest kiosk"
+      "details":"Power bank sharing is a part of sharing economy. The power bank sharing business owner set up multiple power bank stations in several places. When people run out of their mobile phones or other electronic battery, they can simply go to the nearest outlet, pay via an Mpesa paybill number and the account on the machine, and rent a power bank. Customers can take the power bank wherever they go while charging. When finished charging, they can return the power bank to the nearest outlet"
     },
     {
       "id":2,
       "Question":"Do you provide OEM/ODM service?",
       "image":"https://chargeeight.com/wp-content/uploads/2022/08/odm-oem.jpg",
-      "details":"Yes, Mopawa is one of the most reliable shared power bank rental station manufacturers in the world. We provide one-stop solution for power bank sharing business. If you’re interested in this business, please email Mopawaofficial@gmai.com, or contact us our representatives through a submission, we’ll be in touch within 24 hours."
+      "details":"Yes, Mopawa is one of the most reliable shared power bank rental station manufacturers in the world. We provide one-stop solution for power bank sharing business. If you’re interested in this business, please email info@mopawa.co.ke, or contact us our representatives through a submission, we’ll be in touch within 24 hours."
     },
     {
       "id":3,
       "Question":"What payment gateways do you support for the power bank rental?",
       "image":"https://chargeeight.com/wp-content/uploads/2022/08/electronic-payment-systems.jpg",
-      "details":" We’ve cooperated with 300+ clients from 50+ countries. All mainstream payment method is available, such as GoogePay, ApplePay, Credit Card, MasterCard, Visa, PayPal, Stripe, etc. You can confirm with us before launching the power bank rental business."
+      "details":" We’ve cooperated with 300+ clients from various parts of Kenya. All mainstream payment method is available, such as Mpesa, Ethio teleco vodacom etc. You can confirm with us before launching the power bank rental business."
     },
     {
       "id":4,
@@ -46,7 +46,7 @@ function Faq() {
       "id":7,
       "Question":"What materials should I prepare for shared power bank customization?",
       "image":"https://chargeeight.com/wp-content/uploads/2022/08/custom.jpg",
-      "details":"1. A company should be registered locally.2. Apply for docking with local payment methods, such as Google Pay, Apple Pay, Paypal, Stripe, LinePay, etc.3. Provide the communication method that needs to be used so that we can match the corresponding IoT module. 4. Purchase a server, such as Amazon Cloud or Google Cloud. 5. Hardware customization and software customization function tables are provided."
+      "details":"1. A company should be registered locally.2. Apply for docking with local payment methods, such as Mpesa, Ethio Telecom, Vodacom etc.3. Provide the communication method that needs to be used so that we can match the corresponding IoT module. 4. Purchase a server, such as Amazon Cloud or Google Cloud. 5. Hardware customization and software customization function tables are provided."
     },
     {
       "id":8,
@@ -64,7 +64,7 @@ function Faq() {
       "id":10,
       "Question":"How long is the payback period of power bank sharing business?",
       "image":"https://chargeeight.com/wp-content/uploads/2022/09/roi.jpg",
-      "details":"It depends on the charging standard, launching scenarios, station quantity, advertising cooperation, traffic of local users/ visitors, etc. According to the feedback from our customers, it usually takes 6-12 months in Southeast Asia and Europe markets."
+      "details":"It depends on the charging standard, launching scenarios, station quantity, advertising cooperation, traffic of local users/ visitors, etc. According to the feedback from our customers, it usually takes 6-12 months."
     },
     {
       "id":11,

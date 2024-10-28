@@ -2,7 +2,7 @@
 function Hero() {
     return (
       <div>
-          <div className=' h-[50vh] w-[100vw] z-1 relative'>
+          <div className=' h-[70vh] w-[100vw] z-1 relative'>
               <div className=' h-[50vh] w-[100vw] z-1 absolute bg-black opacity-50'></div>
                   <img src="https://australiangrants.org/wp-content/webp-express/webp-images/uploads/2021/11/joint-venture-entrepreneurs.jpg.webp" alt=' Hero section' className=' w-[100vw] h-[50vh] object-cover '/>
               <div className=" lg:pl-[15%]">

@@ -9,7 +9,7 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [selected, setSelected] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-
+  
   const openSearch =()=>{
     setSearchOpen(!searchOpen)
   }
@@ -28,6 +28,10 @@ function Navbar() {
   const handleMenu = () => {
     setSelected(!selected);
   };
+
+  const handlePartsSelected =()=>{
+    setSelected(false)
+  }
 
   return (
     <div className={`fixed top-0 z-[11] w-full flex items-center justify-between px-4 lg:px-10 h-[80px] shadow-sm ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
@@ -87,12 +91,12 @@ function Navbar() {
       {selected && (
         <div className="lg:hidden absolute top-[80px] left-0 w-full bg-white z-10">
           <ul className="flex flex-col">
-            <li><NavLink to="/" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Home</NavLink></li>
-            <li><NavLink to="/products" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Products</NavLink></li>
-            <li><NavLink to="/customs" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Customization</NavLink></li>
-            <li><NavLink to="/blog" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Blogs</NavLink></li>
-            <li><NavLink to="/faq" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">FAQs</NavLink></li>
-            <li><NavLink to="/about" className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">About Us</NavLink></li>
+            <li><NavLink to="/" onClick={handlePartsSelected} className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Home</NavLink></li>
+            <li><NavLink to="/products" onClick={handlePartsSelected} className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Products</NavLink></li>
+            <li><NavLink to="/customs" onClick={handlePartsSelected} className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Customization</NavLink></li>
+            <li><NavLink to="/blog" onClick={handlePartsSelected} className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">Blogs</NavLink></li>
+            <li><NavLink to="/faq" onClick={handlePartsSelected} className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">FAQs</NavLink></li>
+            <li><NavLink to="/about" onClick={handlePartsSelected} className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white">About Us</NavLink></li>
           </ul>
         </div>
       )}

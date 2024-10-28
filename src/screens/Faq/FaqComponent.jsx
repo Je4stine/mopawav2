@@ -21,7 +21,7 @@ function FaqComponent({ question, details, image}) {
     {
         isOpen?
         <div className=" mt-5 flex lg:flex-row flex-col items-center justify-center lg:w-[70vw] w-[90vw]">
-            <img src={image} alt="" className=" h-[200px]"/>
+            <img src={image} alt="" className=" h-[200px] mr-10"/>
             <p>{details}</p>
         </div>
         :
