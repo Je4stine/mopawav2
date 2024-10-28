@@ -5,6 +5,7 @@ const ProfitTable = () => {
       <div className="text-center bg-green-500 p-4 rounded-t-lg">
         <h1 className="font-bold text-lg"> Partner Profit Case</h1>
       </div>
+      <div className="overflow-x-auto">
       <table className="table-auto w-full text-left border-collapse">
         <thead className="bg-green-500 text-center">
           <tr>
@@ -51,6 +52,7 @@ const ProfitTable = () => {
           </tr>
         </tbody>
       </table>
+      </div>
       <div className="bg-green-100 p-2 text-sm text-center border-t">
         <p>
           Tip: The above profit calculation is based on 2 hours of rental at Ksh. 100 per hour. <br />

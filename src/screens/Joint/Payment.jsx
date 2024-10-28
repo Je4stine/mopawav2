@@ -23,9 +23,9 @@ function Payment() {
 
 
                   
-          <div className=' my-10 flex justify-evenly w-full'>
+          <div className=' my-10 flex justify-evenly w-full items-center'>
                 <div className=' flex flex-col items-center'>
-                    <div className=' h-[150px] w-[150px] rounded-full bg-orange-400 flex items-center justify-center '>
+                    <div className=' lg:h-[150px] lg:w-[150px] h-[100px] w-[100px] rounded-full bg-orange-400 flex items-center justify-center '>
                       <h1 className=' text-white font-bold text-4xl'>70%</h1>
                     </div>
                     <h1 className=" text-white font-xl mt-3"> Partner</h1>
@@ -37,7 +37,7 @@ function Payment() {
                 </div>
 
                 <div className=' flex flex-col items-center'>
-                    <div className=' h-[150px] w-[150px] rounded-full bg-orange-400 flex items-center justify-center '>
+                    <div className=' lg:h-[150px] lg:w-[150px] h-[100px] w-[100px] rounded-full bg-orange-400 flex items-center justify-center '>
                       <h1  className=' text-white font-bold text-4xl'>30%</h1>
                     </div>
                     <h1 className=" text-white font-xl mt-3"> Mopawa </h1>
