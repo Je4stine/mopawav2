@@ -1,15 +1,32 @@
+import HeroVid from '../../assets/Videos/herovid.mp4'
+import Stackable from '../../assets/images/stackable.png'
+
 
 function Hero() {
     return (
       <div>
-          <div className=' h-[70vh] w-[100vw] z-1 relative'>
-              <div className=' h-[50vh] w-[100vw] z-1 absolute bg-black opacity-50'></div>
-                  <img src="https://australiangrants.org/wp-content/webp-express/webp-images/uploads/2021/11/joint-venture-entrepreneurs.jpg.webp" alt=' Hero section' className=' w-[100vw] h-[50vh] object-cover '/>
-              <div className=" lg:pl-[15%]">
-                  <h1 className=' absolute lg:top-[40%] top-[20%] text-white lg:text-6xl text-4xl ml-10 font-bold z-0'>Joint Entrepreneureship<br/>
-              </h1>
-              </div>
-              
+          <div className=' lg:h-[70vh] h-[80vh] w-[100vw] z-1 relative'>
+              <div className='  lg:h-[70vh] h-[80vh] w-[100vw] z-1 absolute bg-black opacity-50'></div>
+                <video 
+                        className="w-[100vw]  lg:h-[70vh] h-[80vh] object-cover" 
+                        src={HeroVid} 
+                        autoPlay 
+                        loop 
+                        muted 
+                        playsInline
+                    />
+                <div className=" absolute top-[80px] w-[100vw]">
+                <div className="flex lg:flex-row flex-col-reverse gap-5 items-center">
+                        <div className="flex-1 text-center lg:text-left px-5">
+                            <h1 className="text-white lg:text-6xl text-5xl font-bold animate-textIn mb-5 text-center">Plug into Profits with Mopawa!</h1>
+                        </div>
+                        
+                        <div className="flex-1">
+                        <img className="animate-zoom-pulse lg:h-[60vh] object-cover" src={Stackable} alt="" />
+                        </div>
+                    </div>
+                                
+                </div>
               </div> 
       </div>
     )
