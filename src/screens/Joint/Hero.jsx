@@ -1,5 +1,5 @@
 import HeroVid from '../../assets/Videos/herovid.mp4'
-import Stackable from '../../assets/images/stackable.png'
+import Stackable from '../../assets/images/0E4A7784.png'
 
 
 function Hero() {
