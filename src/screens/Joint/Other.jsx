@@ -17,22 +17,17 @@ function Other() {
           </p>
 
           <div className=' flex lg:flex-row flex-col items-center lg:justify-around'>
-            {/* <div className=''>
-                <img src={Usage} alt="usage time" className='h-[250px]'/>
-                <h1 className=' font-bold text-5xl'>2 hrs </h1>
-                <p className=' '>Per day</p>
-            </div> */}
-            
+                        
             <div className=''>
                 <img src={Budget} alt="usage time" className='h-[250px]'/>
                 <h1 className=' font-bold text-5xl'>Ksh. 200 </h1>
-                <p className=' '>Per person</p>
+                <p className=' '>One Powerbank</p>
             </div>
 
             <div className=''>
                 <img src={Total} alt="usage time" className='h-[250px]'/>
-                <h1 className=' font-bold text-5xl'>Ksh. 1600 </h1>
-                <p className=' '>Per day</p>
+                <h1 className=' font-bold text-5xl'>Ksh. 1200 </h1>
+                <p className=' '>One machine</p>
             </div>
           </div>
         </div>

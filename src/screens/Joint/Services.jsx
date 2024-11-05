@@ -1,14 +1,16 @@
 import { FaComputer } from "react-icons/fa6";
 import { MdCalculate } from "react-icons/md";
 import { GrVmMaintenance } from "react-icons/gr";
-import { ImPowerCord } from "react-icons/im";
+import { IoColorFill } from "react-icons/io5";
 
 
 function Services() {
   return (
     <>
-    <div className=" p-10 grid relative place-content-center bg-gradient-to-t from-green-900 to-black w-full lg:min-h-[40vh] min-h-[50vh]">
-         {/* <img src="https://i.pinimg.com/564x/84/6b/45/846b45cca587f713cc2218074eb50dd1.jpg" alt="" className=" absolute w-full lg:h-[40vh] h-[50vh] object-cover"/> */}
+    <div className=" p-10 grid relative place-content-center w-full lg:min-h-[40vh] min-h-[50vh]">
+         <img src="https://i.pinimg.com/564x/0f/b8/4f/0fb84f14db245ac11b9f790ca4435ce5.jpg" alt="" className=" absolute w-full lg:h-[40vh] h-[50vh] object-cover"/>
+         <div className="absolute w-full top-0 lg:h-[40vh] h-[50vh] bg-black opacity-50"></div>
+
         <div className=" absolute top-0 w-full">
            <h1 className=" text-4xl font-bold text-center my-5 text-white mb-5"> Mopawa provides;</h1>
 
@@ -20,7 +22,7 @@ function Services() {
                         <div className=" rounded-full mr-5 flex items-center justify-center text-4xl font-bold"><FaComputer color="white" size={50}/></div>
                     </div>
                     <div >
-                        <h1 className=" lg:text-xl text-white">A web portal for monitoring Usage and Revenue</h1>
+                        <h1 className=" lg:text-xl text-white text-center">A web portal for monitoring Usage and Revenue in real time</h1>
                      
                 </div>
             </div>
@@ -31,7 +33,7 @@ function Services() {
                         <div className=" rounded-full mr-5 flex items-center justify-center text-4xl font-bold"><MdCalculate color="white" size={50}/></div>
                     </div>
                     <div >
-                        <h1 className=" lg:text-xl text-white">Calculate the Agency commission at the rate of 70% on revenue</h1>
+                        <h1 className=" lg:text-xl text-white text-center">A calculation of the commissions and it will be based on revenue share</h1>
                      
                         </div>
                     </div>
@@ -40,10 +42,10 @@ function Services() {
             <div>
                  <div className=" lg:flex lg:items-center justify-center ">
                     <div>
-                        <div className=" rounded-full mr-5 flex items-center justify-center text-4xl font-bold"><ImPowerCord color="white" size={50}/></div>
+                        <div className=" rounded-full mr-5 flex items-center justify-center text-4xl font-bold"><IoColorFill color="white" size={50}/></div>
                     </div>
                     <div >
-                        <h1 className=" lg:text-xl text-white ">Refill power banks lost during customer's usage</h1>
+                        <h1 className=" lg:text-xl text-white ">Refill power banks lost during usage free of charge</h1>
                      
                         </div>
                     </div>

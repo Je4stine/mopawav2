@@ -4,6 +4,9 @@ import Ethio from '../../assets/images/house.jpg'
 import Vodacom from '../../assets/images/quiver.png'
 import Harbanos from '../../assets/images/harbanos.png'
 import Alfakhere from '../../assets/images/alfakhere.png'
+import Skaypark from '../../assets/images/skypark.png'
+import Paris from '../../assets/images/paris.png'
+
 
 function Outlets() {
     const responsive = {
@@ -44,7 +47,17 @@ function Outlets() {
             </div>
 
             <div className=" flex flex-col items-center justify-center">
-            <img src={Alfakhere} alt="" className="  lg:h-[100px] lg:object-cover mt-10"/>
+            <img src={Alfakhere} alt="" className="  lg:h-[150px] lg:object-cover mt-10"/>
+
+            </div>
+
+            <div className=" flex flex-col items-center justify-center">
+            <img src={Skaypark} alt="" className="  lg:h-[150px] lg:object-cover mt-10"/>
+
+            </div>
+
+            <div className=" flex flex-col items-center justify-center">
+            <img src={Paris} alt="" className="  lg:h-[150px] lg:object-cover mt-10"/>
 
             </div>
            
