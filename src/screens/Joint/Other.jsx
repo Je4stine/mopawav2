@@ -9,7 +9,7 @@ function Other() {
     <div className=' py-10 px-10'>
       </div>
       <div className=' p-5'>
-        <h1 className=' font-bold text-center text-6xl'>How much money can you make from a powerbank?</h1>
+        <h1 className=' font-bold text-center text-5xl'>How much money can you make from a powerbank?</h1>
         
         <div className=' mt-10 '>
           <p className=' text-center mb-10 text-xl'>

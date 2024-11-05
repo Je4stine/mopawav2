@@ -11,7 +11,7 @@ function Payment() {
       <div className="w-full grid place-content-center">
             <h1 className=' font-bold text-4xl text-center my-5'> To earn money, just need <span className=" text-[100px]">3</span> steps</h1>
             <div className=" text-center flex justify-center my-10 ">
-              <div className=" mr-10 text-2xl">1.Inquiry</div>
+              <div className=" mr-10 text-2xl">1.Make inquiry</div>
               <div className=" mr-10 text-2xl">2.Make payment</div>
               <div className=" mr-10  text-2xl">3. Get your cabinet and Open account </div>
             </div>
@@ -21,7 +21,7 @@ function Payment() {
 
     
 
-        <div className=' flex flex-col items-center my-5'>
+        <div className=' flex flex-col items-center'>
           <div>
            
             <h1 className=' text-center text-2xl mt-5'>Each cabinet needs payment of Ksh. 30,000 </h1>
@@ -33,7 +33,7 @@ function Payment() {
               </div>
               <div className=' flex items-center mt-3'>
                   
-                  <h1 className=' ml-5'>  Refundable deposit fee- Ksh. 26,000 </h1>
+                  <h1 className=' ml-5 text-xl'>  Refundable deposit fee- Ksh. 26,000 </h1>
               </div>
 
           </div>
