@@ -1,7 +1,7 @@
 
 import { FaHandshake } from "react-icons/fa";
 import Dollar1 from '../../assets/images/30percent.png'
-import Dollar2 from '../../assets/images/dolllars-min.png'
+import Dollar2 from '../../assets/images/moreusd.png'
 
 
 function Payment() {
@@ -44,7 +44,7 @@ function Payment() {
           <div className=' my-10 flex justify-evenly w-full items-center'>
                 <div className=' flex flex-col items-center'>
                     <div className=' lg:h-[250px] lg:w-[250px]  rounded-full flex items-center justify-center '>
-                      <img src={Dollar2} alt="30% dollars" className=" lg:h-[200px] h-[50px]"/>
+                      <img src={Dollar2} alt="30% dollars" className=" lg:h-[300px] h-[80px] object-cover"/>
                     </div>
                     <h1 className=" text-xl mt-3 font-bold"> 70%  Partner</h1>
                 </div>

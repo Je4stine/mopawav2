@@ -7,7 +7,7 @@ import { IoColorFill } from "react-icons/io5";
 function Services() {
   return (
     <div className="bg-green-200 p-5">
-    <h1 className=" text-center font-bold text-3xl my-10">Mopawa Provides</h1>
+    <h1 className=" text-center font-bold text-4xl my-10">Mopawa Provides</h1>
     <div className=" grid lg:grid-cols-4 grid-cols-2 gap-4">
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <FaComputer size={50} color="green"/>
@@ -20,12 +20,12 @@ function Services() {
         </div>
 
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-            <GrVmMaintenance size={50} color="green"/>
+            <IoColorFill size={50} color="green"/>
             <h1 className=" font-bold text-lg mb-5 text-center">Refill power banks lost during customer's usage free of charge</h1>
         </div>
 
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-            <IoColorFill size={50} color="green"/>
+            <GrVmMaintenance size={50} color="green"/>
             <h1 className=" font-bold text-lg mb-5 text-center">Scheduled maintainance for partners,during which the technician will change the dispenser parts and powerbanks for free</h1>
         </div>
     </div>
