@@ -28,7 +28,7 @@ function Hero() {
                       {/* Stackable Image */}
                       <div className="flex-1 animate-slide-right">
                           <img 
-                              className="lg:h-[600px] md:h-[500px] h-[400px] object-cover" 
+                              className="lg:h-[65vh] md:h-[500px] h-[400px] object-cover" 
                               src={Stackable} 
                               alt="Stackable Image" 
                           />
