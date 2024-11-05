@@ -8,14 +8,16 @@ function Payment() {
 
   return (
     <div className="p-10 bg-white rounded-t-xl">
-      <div className="w-full">
+      <div className="w-full grid place-content-center">
             <h1 className=' font-bold text-4xl text-center my-10'> To earn money, you need 3 steps</h1>
-            <ul className=" text-center flex justify-center ">
-              <li className=" mr-10">1.Inquiry</li>
-              <li className=" mr-10">2.Make payment</li>
-              <li className=" mr-10">3. Open an account with us</li>
-            </ul>
+            <div className=" text-center flex justify-center my-10 bg-green-600 rounded-xl max-w-[70vw] px-3 py-3 ">
+              <div className=" mr-10 text-white text-xl">1.Inquiry</div>
+              <div className=" mr-10 text-white text-xl">2.Make payment</div>
+              <div className=" mr-10 text-white text-xl">3. Open an account with us</div>
+            </div>
         </div>
+ 
+        
 
        <div className="w-full">
             <h1 className=' font-bold text-4xl text-center'> Your Path to Success Starts Here</h1>
