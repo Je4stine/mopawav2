@@ -34,7 +34,7 @@ function Navbar() {
   }
 
   return (
-    <div className={`fixed top-0 z-[11] w-full flex items-center justify-between px-4 lg:px-10 h-[80px] shadow-sm ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+    <div className={`fixed top-0 z-[22] w-full flex items-center justify-between px-4 lg:px-10 h-[80px] shadow-sm ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
       {/* Mobile Menu Icon */}
       <div className="lg:hidden">
         <MdMenu size={40} onClick={handleMenu} className={`${isScrolled ? "text-black" : "text-white"} ml-2`} />
