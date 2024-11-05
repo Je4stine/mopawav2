@@ -32,6 +32,9 @@ export default function Deposit() {
                 <p className='font-bold text-green-700 lg:text-2xl text-xl text-center'>at Ksh. 5,000</p>
             </div>
         </div>
+        <div>
+            <ul></ul>
+        </div>
 
 
         <div className=' bg-[#faf5ee] flex flex-1 justify-around mt-10 items-center'>
