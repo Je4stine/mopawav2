@@ -16,25 +16,29 @@ function Services() {
     <div className="absolute inset-0 bg-blue-900 opacity-75 z-10"></div>
   
     {/* Content */}
-    <h1 className="text-center font-bold text-4xl my-10 relative z-20 text-white">Mopawa Provides</h1>
+    <h1 className="text-center font-bold text-4xl my-10 relative z-20 text-white">We promise</h1>
     <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 relative z-20">
       <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
         <img src={Dash} alt="" className="h-[80px] mb-5"/>
-        <h1 className="font-bold text-lg mb-5 text-center">Web portal for monitoring Usage and Revenue in real time</h1>
+        <h1 className="font-bold mb-5 text-center text-4xl">Web portal </h1>
+        <h1 className="text-lg mb-5 text-center font-bold">You can monitor revenue in real time</h1>
       </div>
   
       <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
         <img src={Commission} alt="" className="h-[80px] mb-5"/>
-        <h1 className="font-bold text-lg mb-5 text-center">Calculation of commission based on the revenue share</h1>
+        <h1 className="font-bold mb-5 text-center text-4xl">Hotline 24/7 </h1>
+        <h1 className="font-bold text-lg mb-5 text-center">Provide call center services for both partners and customers</h1>
       </div>
   
       <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
         <img src={Power} alt="" className="h-[80px] mb-5"/>
-        <h1 className="font-bold text-lg mb-5 text-center">Refill power banks lost during customer's usage free</h1>
+        <h1 className="font-bold text-4xl mb-5 text-center">Free refill</h1>
+        <h1 className="font-bold text-lg mb-5 text-center">Refill power banks lost during customer's usage</h1>
       </div>
   
       <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
         <img src={Settings} alt="" className="h-[80px] mb-5"/>
+        <h1 className="font-bold mb-5 text-center text-4xl">Maintenance </h1>
         <h1 className="font-bold text-lg mb-5 text-center">Scheduled maintenance for partners</h1>
       </div>
     </div>

@@ -9,29 +9,27 @@ function Payment() {
   return (
     <div className="p-10 bg-white rounded-t-xl">
       <div className="w-full grid place-content-center">
-            <h1 className=' font-bold text-4xl text-center my-10'> To earn money, you need 3 steps</h1>
-            <div className=" text-center flex justify-center my-10 bg-green-600 rounded-xl max-w-[70vw] px-3 py-3 ">
-              <div className=" mr-10 text-white text-xl">1.Inquiry</div>
-              <div className=" mr-10 text-white text-xl">2.Make payment</div>
-              <div className=" mr-10 text-white text-xl">3. Open an account with us</div>
+            <h1 className=' font-bold text-4xl text-center my-5'> To earn money, just need <span className=" text-[100px]">3</span> steps</h1>
+            <div className=" text-center flex justify-center my-10 ">
+              <div className=" mr-10 text-2xl">1.Inquiry</div>
+              <div className=" mr-10 text-2xl">2.Make payment</div>
+              <div className=" mr-10  text-2xl">3. Get your cabinet and Open account </div>
             </div>
         </div>
  
         
 
-       <div className="w-full">
-            <h1 className=' font-bold text-4xl text-center'> Your Path to Success Starts Here</h1>
-        </div>
+    
 
         <div className=' flex flex-col items-center my-5'>
           <div>
            
-            <h1 className=' text-center text-2xl mt-5'>To get your own cabinet, make  a payment of Ksh. 30,000 </h1>
+            <h1 className=' text-center text-2xl mt-5'>Each cabinet needs payment of Ksh. 30,000 </h1>
           </div>
           <div className=' my-5'>
               <div className=' flex items-center'>
                   
-                  <h1 className=' ml-5'> One time service fee - Ksh. 4,000</h1>
+                  <h1 className=' ml-5 text-xl'> One time service fee - Ksh. 4,000</h1>
               </div>
               <div className=' flex items-center mt-3'>
                   
@@ -55,9 +53,11 @@ function Payment() {
                 </div>
 
 
-                <div className=' lg:h-[150px] lg:w-[150px] rounded-full flex items-center justify-center '>
+                <div className=' lg:h-[150px] lg:w-[150px] rounded-full flex flex-col items-center justify-center '>
                 <FaHandshake color='black' size={50} className="lg:hidden"/>
                 <FaHandshake color='black' size={200} className=" hidden lg:inline-block"/>
+                <h1 className=" text-xl font-bold mt-3"> Revenue share </h1>
+
                 </div>
 
                 <div className=' flex flex-col items-center'>
@@ -68,9 +68,9 @@ function Payment() {
                 </div>
 
           </div>
-          <div className=' flex flex-col items-center'>
+          {/* <div className=' flex flex-col items-center'>
             <h1 className=' px-4 py-3 bg-green-600 rounded-xl text-white font-bold'>Revenue Share</h1>
-          </div>
+          </div> */}
      
     </div>
   )

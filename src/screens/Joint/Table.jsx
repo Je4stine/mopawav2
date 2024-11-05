@@ -1,12 +1,13 @@
 
 const ProfitTable = () => {
   return (
-    <div className=" block p-2  border-gray-200 shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div className=" grid place-content-center ">
+    <div className=" block p-2  w-[50vw] border-gray-200 shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
       <div className="text-center bg-gray-300 p-4 rounded-t-lg">
         <h1 className="font-bold text-lg"> Partner Profit Case</h1>
       </div>
       <div className="overflow-x-auto">
-      <table className="table-auto w-full text-left border-collapse">
+      <table className="table-auto w-[50vw] text-left border-collapse">
         <thead className="bg-gray-200 text-center">
           <tr>
             <th className="p-2 border">Location</th>
@@ -48,12 +49,8 @@ const ProfitTable = () => {
         </tbody>
       </table>
       </div>
-      <div className="bg-gray-100 p-2 text-sm text-center border-t">
-        <p>
-          Tip: The above profit calculation is based on 2 hours of rental at Ksh. 100 per hour. <br />
-          The data above is for reference, the actual data may differ.
-        </p>
-      </div>
+      
+    </div>
     </div>
   );
 };
