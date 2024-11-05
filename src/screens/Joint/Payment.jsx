@@ -8,28 +8,31 @@ function Payment() {
 
   return (
     <div className="p-10 bg-white rounded-t-xl">
+      <div className="w-full">
+            <h1 className=' font-bold text-4xl text-center'> To earn money, you need 3 steps</h1>
+            <ul className=" text-center">
+              <li>1.Inquiry</li>
+              <li>2.Make payment</li>
+              <li>3. Open an account with us</li>
+            </ul>
+        </div>
+
        <div className="w-full">
             <h1 className=' font-bold text-4xl text-center'> Your Path to Success Starts Here</h1>
         </div>
 
         <div className=' flex flex-col items-center my-5'>
           <div>
-            {/* <div className=' bg-gray-400 rounded-full w-[280px] h-[280px] flex flex-col items-center justify-center'>
-              <img src={Box} alt="" className=' h-[250px] object-cover'/>
-            </div> */}
-            <h1 className=' text-center text-2xl mt-5'>To start earning, make  a payment of Ksh. 30,000 </h1>
+           
+            <h1 className=' text-center text-2xl mt-5'>To get your own cabinet, make  a payment of Ksh. 30,000 </h1>
           </div>
           <div className=' my-5'>
               <div className=' flex items-center'>
-                  <div className="flex-shrink-0 w-[30px] h-[30px] border border-gray-500 rounded-full flex items-center justify-center">
-                    <i className="fas fa-check text-primary text-xl text-green-500"></i>
-                  </div>
+                  
                   <h1 className=' ml-5'> One time service fee - Ksh. 4,000</h1>
               </div>
               <div className=' flex items-center mt-3'>
-                  <div className="flex-shrink-0 w-[30px] h-[30px] border border-gray-500 rounded-full flex items-center justify-center">
-                    <i className="fas fa-check text-primary text-xl text-green-500"></i>
-                  </div>
+                  
                   <h1 className=' ml-5'>  Refundable deposit fee- Ksh. 26,000 </h1>
               </div>
 

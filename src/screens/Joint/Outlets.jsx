@@ -7,6 +7,7 @@ import Alfakhere from '../../assets/images/alfakhere.png'
 import Skaypark from '../../assets/images/skypark.png'
 import Paris from '../../assets/images/paris.png'
 import Malo from '../../assets/images/malomalo.jpg'
+import Covo from '../../assets/images/covo.png'
 
 
 function Outlets() {
@@ -63,7 +64,12 @@ function Outlets() {
             </div>
 
             <div className=" flex flex-col items-center justify-center">
-            <img src={Malo} alt="" className="  lg:h-[150px] lg:object-cover mt-10"/>
+            <img src={Malo} alt="" className="  lg:h-[100px] lg:object-cover mt-10"/>
+
+            </div>
+
+            <div className=" flex flex-col items-center justify-center">
+            <img src={Covo} alt="" className="  lg:h-[100px] lg:object-cover mt-10"/>
 
             </div>
            

@@ -58,13 +58,13 @@ function About() {
           <div className=" lg:flex lg:justify-around">
               <div className=" flex flex-col items-center justify-center lg:mb-0 mb-20">
                   <img src={Director} alt="director image" className=" h-[300px] w-300px] mb-5" />
-                  <h1 className=" text-white font-bold text-xl">Managing Director</h1>
+                  <h1 className=" text-white font-bold text-xl">MD</h1>
                   <h1 className=" text-white">Mr. Peter Wang</h1>
               </div>
               <div className=" flex flex-col items-center justify-center">
                   <img src={Grace} alt="director image" className=" h-[300px] w-300px] mb-5" />
-                  <h1 className=" text-white font-bold text-xl">General Manager</h1>
-                  <h1 className=" text-white">Madam Grace</h1>
+                  <h1 className=" text-white font-bold text-xl">GM</h1>
+                  <h1 className=" text-white">Ms. Grace</h1>
               </div>
           </div>    
     </div>
