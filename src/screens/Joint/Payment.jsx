@@ -5,10 +5,11 @@ import Dollar2 from '../../assets/images/dolllars-min.png'
 
 
 function Payment() {
+
   return (
-    <div className="p-10">
+    <div className="p-10 bg-white rounded-t-xl">
        <div className="w-full">
-            <h1 className=' font-bold text-4xl text-center'> Start business immediately</h1>
+            <h1 className=' font-bold text-4xl text-center'> Your Path to Success Starts Here</h1>
         </div>
 
         <div className=' flex flex-col items-center my-5'>
@@ -43,21 +44,22 @@ function Payment() {
           <div className=' my-10 flex justify-evenly w-full items-center'>
                 <div className=' flex flex-col items-center'>
                     <div className=' lg:h-[250px] lg:w-[250px]  rounded-full flex items-center justify-center '>
-                      <img src={Dollar2} alt="30% dollars" />
+                      <img src={Dollar2} alt="30% dollars" className=" lg:h-[200px] h-[50px]"/>
                     </div>
-                    <h1 className=" text-xl mt-3 font-bold"> Partner</h1>
+                    <h1 className=" text-xl mt-3 font-bold"> 70%  Partner</h1>
                 </div>
 
 
                 <div className=' lg:h-[150px] lg:w-[150px] rounded-full flex items-center justify-center '>
-                <FaHandshake color='black' size={200}/>
+                <FaHandshake color='black' size={50} className="lg:hidden"/>
+                <FaHandshake color='black' size={200} className=" hidden lg:inline-block"/>
                 </div>
 
                 <div className=' flex flex-col items-center'>
                     <div className=' lg:h-[250px] lg:w-[250px]  rounded-full flex items-center justify-center '>
-                      <img src={Dollar1} alt="30% dollars" />
+                      <img src={Dollar1} alt="30% dollars" className=" lg:h-[200px] h-[50px]" />
                     </div>
-                    <h1 className=" text-xl font-bold mt-3"> Mopawa </h1>
+                    <h1 className=" text-xl font-bold mt-3"> 30% Mopawa </h1>
                 </div>
 
           </div>

@@ -5,6 +5,8 @@ import Payment from './Payment'
 import Investor from './Investor'
 import Other from './Other'
 import Hero from './Hero'
+import Partners from './Partners'
+import Outlets from './Outlets'
 
 function Joint() {
   return (
@@ -15,6 +17,8 @@ function Joint() {
     <Services/>
     <Other/>
     <ProfitTable/>
+    <Partners/>
+    <Outlets/>
     </>
   )
 }
