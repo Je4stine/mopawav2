@@ -1,7 +1,7 @@
 
 const ProfitTable = () => {
   return (
-    <div className="p-4">
+    <div className="mx-10 block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
       <div className="text-center bg-gray-300 p-4 rounded-t-lg">
         <h1 className="font-bold text-lg"> Partner Profit Case</h1>
       </div>
