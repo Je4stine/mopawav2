@@ -1,7 +1,9 @@
-import { FaComputer } from "react-icons/fa6";
-import { MdCalculate } from "react-icons/md";
-import { GrVmMaintenance } from "react-icons/gr";
-import { IoColorFill } from "react-icons/io5";
+import Dash from '../../assets/images/web-portal.png'
+import Commission from '../../assets/images/commission.png'
+import Settings from '../../assets/images/settings.png'
+import Power from '../../assets/images/power-bank.png'
+
+
 
 
 function Services() {
@@ -10,22 +12,22 @@ function Services() {
     <h1 className=" text-center font-bold text-4xl my-10">Mopawa Provides</h1>
     <div className=" grid lg:grid-cols-4 grid-cols-2 gap-4">
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-            <FaComputer size={50} color="green"/>
+            <img src={Dash} alt="" className=" h-[80px]"/>
             <h1 className=" font-bold text-lg mb-5 text-center">A web portal for monitoring Usage and Revenue in real time</h1>
         </div>
 
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-            <MdCalculate size={50} color="green"/>
+            <img src={Commission} alt="" className=" h-[80px]"/>
             <h1 className=" font-bold text-lg mb-5 text-center">A calculation of commission based on the revenue share</h1>
         </div>
 
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-            <IoColorFill size={50} color="green"/>
+            <img src={Power} alt="" className=" h-[80px]"/>
             <h1 className=" font-bold text-lg mb-5 text-center">Refill power banks lost during customer's usage free of charge</h1>
         </div>
 
         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
-            <GrVmMaintenance size={50} color="green"/>
+            <img src={Settings} alt="" className=" h-[80px]"/>
             <h1 className=" font-bold text-lg mb-5 text-center">Scheduled maintainance for partners,during which the technician will change the dispenser parts and powerbanks for free</h1>
         </div>
     </div>
