@@ -5,14 +5,14 @@ import './Hero.css'
 function Hero() {
   return (
       <div>
-          <div className='lg:h-[70vh] h-[80vh] w-[100vw] z-1 relative'>
-              <div className='lg:h-[70vh] h-[80vh] w-[100vw] z-1 absolute bg-gradient-to-r from-black'></div>
+          <div className=' h-[80vh] w-[100vw] z-1 relative'>
+              <div className='h-[80vh] w-[100vw] z-1 absolute bg-gradient-to-r from-black'></div>
               
           
               <img 
                   src="https://blueandgreentomorrow.com/wp-content/uploads/2023/04/SFDR.jpg.webp" 
                   alt="piggy bank hero image"  
-                  className="w-[100vw] lg:h-[70vh] h-[80vh] object-cover"
+                  className="w-[100vw] h-[80vh] object-cover"
               />
 
               <div className="absolute top-[80px] w-[100vw]">
