@@ -7,10 +7,11 @@ import Other from './Other'
 import Hero from './Hero'
 import Partners from './Partners'
 import Outlets from './Outlets'
+import FloatingActionButton from './FloatingActionButton'
 
 function Joint() {
   return (
-    <>
+    <div className=' relative'>
     <Hero/>
     <Payment/>
     <Investor/>
@@ -19,7 +20,9 @@ function Joint() {
     <ProfitTable/>
     <Partners/>
     <Outlets/>
-    </>
+
+    <FloatingActionButton/>
+    </div>
   )
 }
 

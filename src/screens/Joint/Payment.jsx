@@ -21,20 +21,26 @@ function Payment() {
 
     
 
-        <div className=' flex flex-col items-center'>
+        <div className=' flex flex-col items-center justify-center'>
           <div>
            
-            <h1 className=' text-center text-2xl mt-5'>Each cabinet needs payment of Ksh. 30,000 </h1>
+            <h1 className=' text-center text-2xl'>Each cabinet needs payment of Ksh. 30,000 </h1>
           </div>
-          <div className=' my-5'>
-              <div className=' flex items-center'>
-                  
-                  <h1 className=' ml-5 lg:text-xl'> One time service fee - Ksh. 4,000</h1>
-              </div>
-              <div className=' flex items-center mt-3'>
-                  
-                  <h1 className=' ml-5 lg:text-xl'>  Refundable deposit fee- Ksh. 26,000 </h1>
-              </div>
+
+          <div className=' my-5 flex items-center'>
+              <div>
+                <h1 className=" text-xl mr-10 font-bold">Include:</h1>
+                </div>
+
+     
+                  <div className=' flex items-center'>
+                      <h1 className=' ml-5 lg:text-xl'> One time service fee - Ksh. 4,000,</h1>
+                  </div>
+                  <div className=' flex items-center '> 
+                      <h1 className=' ml-5 lg:text-xl'>  Refundable deposit fee- Ksh. 26,000 </h1>
+                  </div>
+       
+        
 
           </div>
           
