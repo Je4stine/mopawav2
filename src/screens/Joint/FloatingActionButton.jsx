@@ -13,8 +13,9 @@ function FloatingActionButton() {
       };
 
   return (
-    <div className="fixed right-5 bottom-10 hover:cursor-pointer">
-        <img onClick={handleDownload} src={Download} alt="download button bottom-10" />
+    <div className="fixed right-5 bottom-10 hover:cursor-pointer flex items-center  ">
+        <h1 className=' mr-5 font-bold'>Download the agreement</h1>
+        <img onClick={handleDownload} src={Download} alt="download button bottom-10 h-[100px] w-[100px] animate-bounce" />
     </div>
   )
 }
