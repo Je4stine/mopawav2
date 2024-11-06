@@ -19,7 +19,7 @@ function Blogs() {
       try{
         const response = await fetch(`${BaseUrl}/wp-json/wp/v2/posts?per_page=19`);
         const blogData = await response.json();
-        setAllBlogs(blogData.reverse())
+        setAllBlogs(blogData)
         console.log(blogData[0].content)
       }catch(error){
         console.log(error)
