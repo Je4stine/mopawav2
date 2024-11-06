@@ -8,11 +8,13 @@ import Hero from './Hero'
 import Partners from './Partners'
 import Outlets from './Outlets'
 import FloatingActionButton from './FloatingActionButton'
+import Cards from './Cards'
 
 function Joint() {
   return (
     <div className=' relative'>
     <Hero/>
+    {/* <Cards/> */}
     <Payment/>
     <Investor/>
     <Services/>

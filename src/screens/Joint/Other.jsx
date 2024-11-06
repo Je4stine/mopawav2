@@ -9,11 +9,11 @@ function Other() {
     <div className=' py-10 px-10'>
       </div>
       <div className=' p-5'>
-        <h1 className=' font-bold text-center lg:text-5xl text-2xl'>How much money can you make from a powerbank?</h1>
+        <h1 className=' font-bold text-center lg:text-4xl text-2xl'>How much money can you make from a powerbank?</h1>
         
         <div className=' mt-10 '>
           <p className=' text-center mb-10 lg:text-xl'>
-            It is estimated that one powerbank can be used for 2 hours daily at Ksh. 100 per hour. <br/>The income of 1 powerbank is Ksh. 200, and one machine per day is 200 * 6 = Ksh. 1200
+            One powerbank can be used for 2 hours daily at Ksh. 100 per hour. <br/>The income of 1 powerbank is Ksh. 200, and one machine per day is 200 * 6 = Ksh. 1200
           </p>
 
           <div className=' flex lg:flex-row flex-col items-center justify-center'>
