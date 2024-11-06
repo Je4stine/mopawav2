@@ -14,7 +14,7 @@ function Joint() {
   return (
     <div className=' relative'>
     <Hero/>
-    {/* <Cards/> */}
+    <Cards/>
     <Payment/>
     <Investor/>
     <Services/>
