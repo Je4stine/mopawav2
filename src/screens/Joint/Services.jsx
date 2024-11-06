@@ -17,7 +17,8 @@ function Services() {
   
     {/* Content */}
     <h1 className="text-center font-bold text-4xl my-10 relative z-20 text-white">We promise</h1>
-    <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 relative z-20">
+    
+    <div className="grid lg:grid-cols-4 grid-cols-1 gap-4 relative z-20">
       <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
         <img src={Dash} alt="" className="h-[80px] mb-5"/>
         <h1 className="font-bold mb-5 text-center text-4xl">Web portal </h1>

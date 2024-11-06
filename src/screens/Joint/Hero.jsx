@@ -20,7 +20,7 @@ function Hero() {
                       
                       {/* Text Content */}
                       <div className="flex-1 text-center lg:text-left px-5 animate-slide-left lg:ml-10">
-                          <h1 className="text-white lg:text-6xl text-5xl font-bold mb-5">
+                          <h1 className="text-white lg:text-6xl text-3xl font-bold mb-5">
                           One-time Investment,<br/>
                           a lifetime income
                           </h1>
@@ -29,7 +29,7 @@ function Hero() {
                       {/* Stackable Image */}
                       <div className="flex-1 animate-slide-right">
                           <img 
-                              className="lg:h-[65vh] md:h-[500px] h-[400px] object-cover" 
+                              className="lg:h-[65vh] md:h-[500px] h-[350px] object-cover" 
                               src={Stackable} 
                               alt="Stackable Image" 
                           />

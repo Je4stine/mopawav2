@@ -9,11 +9,11 @@ function Payment() {
   return (
     <div className="p-10 bg-white rounded-t-xl">
       <div className="w-full grid place-content-center">
-            <h1 className=' font-bold text-4xl text-center my-5'> To earn money, just need <span className=" text-[100px]">3</span> steps</h1>
-            <div className=" text-center flex justify-center my-10 ">
-              <div className=" mr-10 text-2xl">1.Make inquiry</div>
-              <div className=" mr-10 text-2xl">2.Make payment</div>
-              <div className=" mr-10  text-2xl">3. Get your cabinet and Open account </div>
+            <h1 className=' font-bold lg:text-4xl text-xl text-center my-5'> To earn money, just need <span className=" lg:text-[100px] text-[50px]">3</span> steps</h1>
+            <div className=" text-center flex lg:flex-row flex-col justify-center my-10 ">
+              <div className=" mr-10 lg:text-2xl ">1.Make inquiry</div>
+              <div className=" mr-10 lg:text-2xl">2.Make payment</div>
+              <div className=" mr-10  lg:text-2xl">3. Get your cabinet and Open account </div>
             </div>
         </div>
  
@@ -29,11 +29,11 @@ function Payment() {
           <div className=' my-5'>
               <div className=' flex items-center'>
                   
-                  <h1 className=' ml-5 text-xl'> One time service fee - Ksh. 4,000</h1>
+                  <h1 className=' ml-5 lg:text-xl'> One time service fee - Ksh. 4,000</h1>
               </div>
               <div className=' flex items-center mt-3'>
                   
-                  <h1 className=' ml-5 text-xl'>  Refundable deposit fee- Ksh. 26,000 </h1>
+                  <h1 className=' ml-5 lg:text-xl'>  Refundable deposit fee- Ksh. 26,000 </h1>
               </div>
 
           </div>
