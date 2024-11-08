@@ -2,7 +2,7 @@
 import { FaHandshake } from "react-icons/fa";
 import Dollar1 from '../../assets/images/30percent.png'
 import Dollar2 from '../../assets/images/moreusd.png'
-import Minimumrisk from '../../assets/images/Minimumrisk.png'
+import Minimumrisk from '../../assets/images/minimumrisk.png'
 import Mopawabg from '../../assets/images/mopawabg.jpg'
 
 
