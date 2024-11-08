@@ -13,7 +13,7 @@ function Services() {
     style={{ backgroundImage: `url('https://t3.ftcdn.net/jpg/07/46/95/46/360_F_746954673_VaR2YwZvNk4w5rZEVuo5U3yLfkHwEVEz.jpg')` }}
   >
     {/* Blue overlay */}
-    <div className="absolute inset-0 bg-blue-900 opacity-75 z-10"></div>
+    <div className="absolute inset-0 bg-green-600 opacity-75 z-10"></div>
   
     {/* Content */}
     <h1 className="text-center font-bold text-4xl my-10 relative z-20 text-white">We promise</h1>

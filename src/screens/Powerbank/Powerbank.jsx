@@ -7,8 +7,9 @@ function Powerbank() {
     <div>
         <Hero/>
         <div className=' min-h-[20vh] flex flex-col items-center justify-center'> 
-        <img src={Powerbanks} alt="stand" />
-      </div>
+          <img src={Powerbanks} alt="stand" className=' lg:h-[50vh]' />
+        </div>
+        <p>Our power banks </p>
     </div>
   )
 }

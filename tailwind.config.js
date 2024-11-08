@@ -7,16 +7,16 @@ export default {
   theme: {
     extend: {
       animation: {
-        'zoom-pulse': 'zoom-pulse 3s infinite',
+        'zoom-pulse': 'zoom-pulse 0.75s infinite',
       },
       keyframes: {
         'zoom-pulse': {
           '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.05)' },
+          '50%': { transform: 'scale(1.1)' },
         },
       },
       textIn: {
-        '0%': { opacity: '0', transform: 'translateY(20px)' },
+        '0%': { opacity: '0', transform: 'translateY(30px)' },
         '100%': { opacity: '1', transform: 'translateY(0)' },
       },
     },
