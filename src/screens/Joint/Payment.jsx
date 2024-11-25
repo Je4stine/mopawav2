@@ -31,7 +31,7 @@ function Payment() {
           <h1 className="text-xl mr-10 font-bold">Include:</h1>
 
           <div className="flex items-center ml-5">
-            <h1 className="lg:text-xl">One time service fee - Ksh. 4,000,</h1>
+            <h1 className="lg:text-xl">Service fee - Ksh. 4,000,</h1>
           </div>
           <div className="flex items-center ml-5">
             <h1 className="lg:text-xl">Refundable deposit fee - Ksh. 26,000</h1>

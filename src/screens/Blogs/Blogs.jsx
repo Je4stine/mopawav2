@@ -1,74 +1,94 @@
-import Hero from "./Hero"
-import BlogCard from './BlogCard'
-import { useState, useEffect } from "react"
+import Hero from "./Hero";
+import BlogCard from "./BlogCard";
+import { useState, useEffect } from "react";
 import { Spinner } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function Blogs() {
-  const BaseUrl = "https://blog.mopawa.co.ke"
-  const [allBlogs, setAllBlogs] = useState([])
-  const navigate = useNavigate()
+  const BaseUrl = "https://blog.mopawa.co.ke";
+  const [allBlogs, setAllBlogs] = useState([]);
+  const navigate = useNavigate();
 
+  const handleNavigate = (id, image, title, date, paragraph) => {
+    navigate(`/blog/${id}/${title}`, {
+      state: { image, title, date, paragraph },
+    });
+  };
 
-  const handleNavigate =(id,image, title, date, paragraph)=> {
-    navigate(`/blog/${id}/${title}`, {state:{ image, title, date, paragraph}})
-}
-
-  const getBlogs = async()=>{
-      try{
-        const response = await fetch(`${BaseUrl}/wp-json/wp/v2/posts?per_page=19`);
-        const blogData = await response.json();
-        setAllBlogs(blogData)
-        console.log(blogData[0].content)
-      }catch(error){
-        console.log(error)
-      }
-  }
+  const getBlogs = async () => {
+    try {
+      const response = await fetch(
+        `${BaseUrl}/wp-json/wp/v2/posts?per_page=19`
+      );
+      const blogData = await response.json();
+      setAllBlogs(blogData.reverse());
+      console.log(blogData[0].content);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   function formatDate(dateString) {
     const date = new Date(dateString);
-    const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+    const formattedDate = `${date.getDate()}/${
+      date.getMonth() + 1
+    }/${date.getFullYear()}`;
     return formattedDate;
   }
 
-  useEffect(()=>{
-    getBlogs()
-  },[])
-
-
+  useEffect(() => {
+    getBlogs();
+  }, []);
 
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Blogs </title>
-        <meta name="description" content="News, tips and reviews about our product " />
-        <meta name="keywords" content="shared power bank, rental powerbank, mopawa, power bank" />
+        <meta
+          name="description"
+          content="News, tips and reviews about our product "
+        />
+        <meta
+          name="keywords"
+          content="shared power bank, rental powerbank, mopawa, power bank"
+        />
       </Helmet>
-      <Hero/>
+      <Hero />
       {/* <div className=" grid lg:grid-cols-3 grid-cols-1 place-items-center gap-6 mt-10"> */}
       <div className=" grid lg:grid-cols-3 grid-cols-1 place-items-center gap-[6px] mt-10">
-        {
-          allBlogs.length == 0 ?
+        {allBlogs.length == 0 ? (
           <div className="flex justify-center items-center w-full h-[300px]">
-            <Spinner aria-label="Center-aligned Extra large spinner example" size="xl" />
+            <Spinner
+              aria-label="Center-aligned Extra large spinner example"
+              size="xl"
+            />
           </div>
-      :
-          allBlogs.map((item, index)=>{
-            return(
-              <BlogCard key={index} 
-              handleNavigate={()=>handleNavigate(item.id, item.featured_media_src_url, item.title.rendered, item.date,item.content.rendered )}
-              tittle={item.title.rendered} 
-              body={item.content.rendered} 
-              date={formatDate(item.date)}
-              image={item.featured_media_src_url}/>
-            )
+        ) : (
+          allBlogs.map((item, index) => {
+            return (
+              <BlogCard
+                key={index}
+                handleNavigate={() =>
+                  handleNavigate(
+                    item.id,
+                    item.featured_media_src_url,
+                    item.title.rendered,
+                    item.date,
+                    item.content.rendered
+                  )
+                }
+                tittle={item.title.rendered}
+                body={item.content.rendered}
+                date={formatDate(item.date)}
+                image={item.featured_media_src_url}
+              />
+            );
           })
-        }
+        )}
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Blogs
+export default Blogs;

@@ -1,18 +1,67 @@
-import Carouselq from "./Carousel"
+import Section from "./RatingStar";
+import { useEffect, useRef } from "react";
+import KeenSlider from "keen-slider";
+import "keen-slider/keen-slider.min.css";
+
 function Success() {
- 
+  const testimonialData = [
+    {
+      title: "Stayin' Alive",
+      text: "No, Rose, they are not breathing. And they have no arms or legs … Where are they?",
+      author: "Michael Scott",
+    },
+    {
+      title: "Outstanding Service",
+      text: "This team went above and beyond to ensure our satisfaction!",
+      author: "Jim Halpert",
+    },
+    {
+      title: "Outstanding Service",
+      text: "This team went above and beyond to ensure our satisfaction!",
+      author: "Jim Halpert",
+    },
+    {
+      title: "Outstanding Service",
+      text: "This team went above and beyond to ensure our satisfaction!",
+      author: "Jim Halpert",
+    },
+  ];
+
+  const sliderRef = useRef(null);
+  const sliderInstance = useRef(null);
+
+  useEffect(() => {
+    if (sliderRef.current) {
+      sliderInstance.current = new KeenSlider(sliderRef.current, {
+        loop: true,
+        slides: {
+          origin: "center",
+          perView: 1,
+          spacing: 15,
+        },
+        breakpoints: {
+          "(min-width: 1024px)": {
+            slides: {
+              origin: "auto",
+              perView: 1.5,
+              spacing: 32,
+            },
+          },
+        },
+      });
+    }
+
+    return () => sliderInstance.current?.destroy();
+  }, []);
+
+  const handlePrevious = () => sliderInstance.current?.prev();
+  const handleNext = () => sliderInstance.current?.next();
 
   return (
-    <div> 
-      <div className=" bg-gray-200">
-          <h1 className=" text-center text-3xl font-bold py-10 ">Success Stories</h1>
-          <p className=" text-center py-5">Mopawa has cooperated with several locations in Kenya since 2022 and has grown rapidly covering most parts of Nairobi and it's outskirts.
-            
-          </p>
-        </div>    
-        <Carouselq/>
+    <div>
+      <Section testimonials={testimonialData} />
     </div>
-  )
+  );
 }
 
-export default Success
+export default Success;
