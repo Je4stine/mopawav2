@@ -42,7 +42,7 @@ function About() {
           </h1>
         </div>
 
-        <div className=" absolute bottom-[10%] right-[50%] z-0 animate-bounce">
+        <div className=" absolute bottom-[10%] right-[45%] z-0 animate-bounce">
           <IoIosArrowDown color="white" size={60} />
         </div>
       </div>
@@ -94,7 +94,7 @@ function About() {
             <img
               src={Grace}
               alt="director image"
-              className=" h-[300px] w-300px] mb-5"
+              className=" lg:h-[300px] lg:w-[300px] mb-5 object-cover"
             />
             <h1 className=" text-white font-bold text-xl">GM</h1>
             <h1 className=" text-white">Mrs. Grace</h1>

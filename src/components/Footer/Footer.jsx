@@ -15,7 +15,7 @@ function Footer() {
   };
 
   useEffect(() => {
-    fetch("https://visitors.mopawa.co.ke/visitors")
+    fetch("https://visitors2.mopawa.co.ke/visitors")
       .then((response) => response.json())
       .then((data) => setVisitorCount(data))
       .catch((error) => console.error("Error fetching visitor count:", error));
