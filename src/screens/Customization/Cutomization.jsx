@@ -1,27 +1,35 @@
-import Hero from './Hero'
-import Component2 from './Component2'
-import Payment from './Payment'
-import Success from './Success'
-import Why from './Why'
-import Contact from '../../components/Contact'
-import { Helmet } from 'react-helmet'
+import Hero from "./Hero";
+import Component2 from "./Component2";
+import Payment from "./Payment";
+import Success from "./Success";
+import Why from "./Why";
+import Contact from "../../components/Contact";
+import { Helmet } from "react-helmet";
+import SmileForNeuroDiversity from "./NewTestimonial";
 
 function Cutomization() {
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Brand Customization </title>
-        <meta name="description" content="Get a custom shared rental station from us  " />
-        <meta name="keywords" content="shared power bank, rental powerbank, mopawa, power bank" />
+        <meta
+          name="description"
+          content="Get a custom shared rental station from us  "
+        />
+        <meta
+          name="keywords"
+          content="shared power bank, rental powerbank, mopawa, power bank"
+        />
       </Helmet>
-      <Hero/>
-      <Component2/>
-      <Payment/>
-      <Success/>
-      <Why/>
-      <Contact/>
+      <Hero />
+      <Component2 />
+      <Payment />
+      {/* <Success/> */}
+      <SmileForNeuroDiversity />
+      <Why />
+      <Contact />
     </div>
-  )
+  );
 }
 
-export default Cutomization
+export default Cutomization;

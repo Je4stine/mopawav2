@@ -6,8 +6,6 @@ import Contact from "../../components/Contact";
 import { Helmet } from "react-helmet";
 import Director from "../../assets/images/20241017-092608.jpg";
 import Grace from "../../assets/images/Grace.png";
-import Charging from "../../assets/images/charging.jpg";
-import { IoIosArrowDown } from "react-icons/io";
 
 function About() {
   return (
@@ -24,37 +22,34 @@ function About() {
         />
       </Helmet>
 
-      <div className=" h-[90vh] w-[100vw] z-1 relative">
-        <div className=" h-[90vh] w-[100vw] z-1 absolute bg-black opacity-50"></div>
+      <div className=" h-[80vh] w-[100vw] z-1 relative">
+        <div className=" h-[80vh] w-[100vw] z-1 absolute bg-black opacity-40"></div>
         <img
-          src="https://images.unsplash.com/photo-1693902997450-7e912c0d3554?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmFpcm9iaSUyMGNpdHl8ZW58MHx8MHx8fDA%3D"
+          src="https://i.pinimg.com/originals/7a/22/a6/7a22a6a1a2c449687f0ea85b91d97419.gif"
           alt=" Hero section"
-          className=" w-[100vw] h-[90vh] object-cover "
+          className=" w-[100vw] h-[80vh] object-cover "
         />
-        <div className=" lg:pl-[15%]">
-          <h1 className=" absolute lg:top-[40%] top-[20%] text-white lg:text-6xl text-4xl ml-10 font-bold z-0">
-            About Mopawa
-            <br />
-            <span className=" lg:text-2xl text-lg font-normal">
-              Mopawa - Best Sharing Power Bank Station Manufacturer. Reliable
-              Power Bank Rental Service Provider.
-            </span>
-          </h1>
-        </div>
-
-        <div className=" absolute bottom-[10%] right-[45%] z-0 animate-bounce">
-          <IoIosArrowDown color="white" size={60} />
+        <div className="text-white absolute h-full w-full top-0 left-0 lg:ml-[10%] flex flex-col justify-center lg:items-start items-center">
+          <h1 className=" font-bold text-4xl mb-10">About Us</h1>
+          <span className=" lg:text-2xl text-lg font-normal">
+            Mopawa - Best Sharing Power Bank Station Manufacturer.
+            <br /> Reliable Power Bank Rental Service Provider.
+          </span>
         </div>
       </div>
 
       <div className=" bg-gray-200 flex flex-col-reverse lg:flex-row items-center justify-center p-10">
         <div className="flex flex-col flex-1">
-          <img
-            src={Charging}
-            alt="chrging"
-            className="lg:h-[400px] lg:w-[80%] object-cover"
-          />
+          <iframe
+            className="w-96 h-64 sm:w-[560px] sm:h-[315px] md:w-[640px] md:h-[360px]"
+            src="https://www.youtube.com/embed/-PNC-CUpXw0?si=jgfgCxuvfjFhnXF5"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullscreen
+          ></iframe>
         </div>
+
         <div className=" p-5 flex flex-col flex-1 items-center">
           <h1 className="lg:text-4xl text-2xl font-bold mb-5">Who are we?</h1>
           <p>
@@ -85,7 +80,7 @@ function About() {
             <img
               src={Director}
               alt="director image"
-              className=" h-[300px] w-300px] mb-5"
+              className=" h-[300px] w-300px] mb-5 object-cover"
             />
             <h1 className=" text-white font-bold text-xl">MD</h1>
             <h1 className=" text-white">Mr. Peter Wang</h1>

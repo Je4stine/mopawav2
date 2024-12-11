@@ -5,8 +5,7 @@ import Twelve from "../../assets/images/12slot.png"
 import Stand from '../../assets/images/Stand.png'
 import Powerbank from '../../assets/images/Powerbanks.png'
 import Contact from '../../components/Contact'
-import Stacks from '../../assets/images/stackable.png'
-import { Link } from 'react-router-dom'
+import Stacks from '../../assets/images/powerbankdispenser.png'
 import { Helmet } from 'react-helmet'
 
 
