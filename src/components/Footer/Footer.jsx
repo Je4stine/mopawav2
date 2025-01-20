@@ -37,9 +37,9 @@ function Footer() {
             <br />
             Mopawa IOT Solutions Africa
             <br />
-            Victoria Towers
+            Bush House, Off Ngong' Road
             <br />
-            Upperhill
+            Kabarnet Road
             <br />
             Email: info@mopawa.co.ke
             <br />
