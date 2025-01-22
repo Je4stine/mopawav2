@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { ThreeDots } from "react-loader-spinner";
+import "./Warranty.css";
 
 function Warranty() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -84,154 +85,85 @@ function Warranty() {
         </div>
       </div>
 
-      <div className="min-h-[50vh]">
-        <div className=" mt-10 flex items-center w-full justify-center">
-          <button
-            className={
-              selected === 1
-                ? " mr-10 border-b-8 border-orange-400 font-bold"
-                : "mr-10"
-            }
-            onClick={() => handleTabs(1)}
-          >
-            <h1>Registration</h1>
-          </button>
-          <button
-            className={
-              selected === 2 ? " border-b-8 border-orange-400 font-bold" : ""
-            }
-            onClick={() => handleTabs(2)}
-          >
-            <h1>Warranty Claim</h1>
-          </button>
+      <div className="min-h-[50vh] py-10 lg:flex">
+        <div className="flex-1 px-5 items-center justify-center">
+          <h2 className=" font-bold text-2xl my-2">Warranty Registration</h2>
+          <p className=" my-2">
+            When you register your warranty, you will get;
+          </p>
+          <ul className=" list-decimal list-inside">
+            <li>
+              <strong>6 months</strong> warranty
+            </li>
+            <li>
+              <strong>One-time</strong> replacement of the power bank cell
+            </li>
+            <li>
+              <strong>One-time</strong> replacement of the power bank cable
+            </li>
+          </ul>
+          <hr className=" my-5 lg:hidden flex" />
         </div>
-        {selected === 1 ? (
-          <div className=" flex flex-col items-center pt-10 px-3">
-            <h2 className=" font-bold text-2xl my-5">Warranty Registration</h2>
-            <p className=" my-2 text-center">
-              Please enter your power bank and personal information below
-            </p>
-            {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
-            {successMessage && (
-              <p style={{ color: "green" }}>{successMessage}</p>
+
+        <div className=" flex flex-col px-3 flex-1">
+          <h2 className=" font-bold text-2xl my-2">Warranty Infomation</h2>
+          <p className=" my-2">
+            Please enter your power bank and personal information below
+          </p>
+          {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
+          {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
+
+          <form onSubmit={handleSubmit} className=" flex flex-col ">
+            <div className=" p-5">
+              <label htmlFor="serialNumber" className=" mr-10">
+                Serial Number:
+              </label>
+              <input
+                className=" rounded-md"
+                type="text"
+                id="serialNumber"
+                value={serialNumber}
+                onChange={(e) => setSerialNumber(e.target.value)}
+                required
+              />
+            </div>
+
+            <div className=" p-5">
+              <label htmlFor="phoneNumber" className=" mr-10">
+                Phone Number:
+              </label>
+              <input
+                className=" rounded-md"
+                type="text"
+                id="phoneNumber"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                required
+              />
+            </div>
+            {loading ? (
+              <div className=" text-white bg-yellow-400 px-3 py-2 rounded-md mt-3">
+                <ThreeDots
+                  visible={true}
+                  height="40"
+                  width="40"
+                  color="#ffffff"
+                  radius="9"
+                  ariaLabel="three-dots-loading"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                />
+              </div>
+            ) : (
+              <button
+                className=" text-white bg-yellow-400 px-3 py-2 rounded-md mt-3"
+                type="submit"
+              >
+                Register Warranty
+              </button>
             )}
-
-            <form
-              onSubmit={handleSubmit}
-              className=" flex flex-col items-center"
-            >
-              <div className=" p-5">
-                <label htmlFor="phoneNumber" className=" mr-10">
-                  Phone Number:
-                </label>
-                <input
-                  className=" rounded-md"
-                  type="text"
-                  id="phoneNumber"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                  required
-                />
-              </div>
-
-              <div className=" p-5">
-                <label htmlFor="serialNumber" className=" mr-10">
-                  Serial Number:
-                </label>
-                <input
-                  className=" rounded-md"
-                  type="text"
-                  id="serialNumber"
-                  value={serialNumber}
-                  onChange={(e) => setSerialNumber(e.target.value)}
-                  required
-                />
-              </div>
-              {loading ? (
-                <div className=" text-white bg-yellow-400 px-3 py-2 rounded-md mt-3">
-                  <ThreeDots
-                    visible={true}
-                    height="40"
-                    width="40"
-                    color="#ffffff"
-                    radius="9"
-                    ariaLabel="three-dots-loading"
-                    wrapperStyle={{}}
-                    wrapperClass=""
-                  />
-                </div>
-              ) : (
-                <button
-                  className=" text-white bg-yellow-400 px-3 py-2 rounded-md mt-3"
-                  type="submit"
-                >
-                  Register Warranty
-                </button>
-              )}
-            </form>
-          </div>
-        ) : (
-          <div className=" flex flex-col items-center pt-10">
-            <h2 className=" font-bold text-2xl my-10">Warranty Claim</h2>
-            {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
-            {successMessage && (
-              <p style={{ color: "green" }}>{successMessage}</p>
-            )}
-            <form
-              onSubmit={handleClaim}
-              className=" flex flex-col items-center"
-            >
-              <div className=" p-5">
-                <label htmlFor="phoneNumber" className=" mr-10">
-                  Phone Number:
-                </label>
-                <input
-                  className=" rounded-md"
-                  type="text"
-                  id="phoneNumber"
-                  value={claimNumber}
-                  onChange={(e) => setClaimNumber(e.target.value)}
-                  required
-                />
-              </div>
-
-              <div className=" p-5">
-                <label htmlFor="serialNumber" className=" mr-10">
-                  Serial Number:
-                </label>
-                <input
-                  className=" rounded-md"
-                  type="text"
-                  id="phoneNumber"
-                  value={claimSerialNumber}
-                  onChange={(e) => setClaimSerialNumber(e.target.value)}
-                  required
-                />
-              </div>
-              {loading ? (
-                <div className=" text-white bg-yellow-400 px-3 rounded-md mt-3">
-                  <ThreeDots
-                    visible={true}
-                    height="40"
-                    width="40"
-                    color="#ffffff"
-                    radius="9"
-                    ariaLabel="three-dots-loading"
-                    wrapperStyle={{}}
-                    wrapperClass=""
-                  />
-                </div>
-              ) : (
-                <button
-                  className=" text-white bg-yellow-400 px-3 py-2 rounded-md mt-3"
-                  type="submit"
-                >
-                  Get SMS
-                </button>
-              )}
-            </form>
-          </div>
-        )}
+          </form>
+        </div>
       </div>
     </div>
   );
