@@ -89,7 +89,7 @@ function Warranty() {
         <div className="flex-1 px-5 items-center justify-center">
           <h2 className=" font-bold text-2xl my-2">Warranty Registration</h2>
           <p className=" my-2">
-            When you register your warranty, you will get;
+            When you register your power bank*, you will get;
           </p>
           <ul className=" list-decimal list-inside">
             <li>
