@@ -141,7 +141,7 @@ function Navbar() {
             </ul>
           </div>
         </div>
-        <NavLink
+        {/* <NavLink
           to="/customs"
           className={({ isActive }) =>
             isActive
@@ -152,7 +152,7 @@ function Navbar() {
           }
         >
           Customization
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/blog"
           className={({ isActive }) =>
@@ -333,6 +333,15 @@ function Navbar() {
                 className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white"
               >
                 About Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/warranty"
+                onClick={handlePartsSelected}
+                className="block px-4 py-2 text-black hover:bg-yellow-400 hover:text-white"
+              >
+                Register Warranty
               </NavLink>
             </li>
           </ul>
