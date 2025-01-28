@@ -189,6 +189,21 @@ function Navbar() {
         >
           About Us
         </NavLink>
+
+        <NavLink
+          to="/warranty"
+          className={({ isActive }) =>
+            isActive
+              ? "text-white bg-yellow-400 p-2 rounded-md"
+              : `${
+                  isScrolled
+                    ? "text-black border-black rounded-md"
+                    : "text-white border-white rounded-md"
+                } mx-4 hover:bg-yellow-400 hover:rounded-md py-2 px-3 hover:text-white`
+          }
+        >
+          Register Warranty
+        </NavLink>
       </nav>
 
       {/* Search and Menu for Large Screens */}

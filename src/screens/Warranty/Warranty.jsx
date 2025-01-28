@@ -119,7 +119,7 @@ function Warranty() {
                 Serial Number:
               </label>
               <input
-                className=" rounded-md"
+                className=" rounded-md font-sans"
                 type="text"
                 id="serialNumber"
                 value={serialNumber}
@@ -129,11 +129,12 @@ function Warranty() {
             </div>
 
             <div className=" p-5">
-              <label htmlFor="phoneNumber" className=" mr-10">
+              <label htmlFor="phoneNumber" className=" mr-10 ">
                 Phone Number:
               </label>
               <input
-                className=" rounded-md"
+                className=" rounded-md font-sans"
+                placeholder="2547XXXXXXXX"
                 type="text"
                 id="phoneNumber"
                 value={phoneNumber}
