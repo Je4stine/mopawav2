@@ -20,6 +20,8 @@ import Stackable from "./screens/Products/Stackable";
 import Privacy from "./screens/Privacy/Privacy";
 import ContactUs from "./screens/Contacts/ContactUs";
 import Warranty from "./screens/Warranty/Warranty";
+import Refererral from "./screens/Referrals/Refererral";
+import AmbassadorHome from "./screens/Referrals/AmbassadorHome";
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/contacts" element={<ContactUs />} />
           <Route path="/warranty" element={<Warranty />} />
+          <Route path="/referrals" element={<Refererral />} />
+          <Route path="/ambassador/home" element={<AmbassadorHome />} />
         </Routes>
         <Footer />
       </BrowserRouter>
