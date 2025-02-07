@@ -23,7 +23,7 @@ function AmbassadorHome() {
           Welcome, Jane Doe
         </h1>
         <div className="space-y-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center ">
             <h2 className="text-lg font-medium text-gray-700">
               Your referral code today is:
             </h2>
@@ -31,10 +31,10 @@ function AmbassadorHome() {
               onClick={() => copyToClipboard("123567")}
               className="text-blue-500 hover:underline focus:outline-none"
             >
-              <span className="font-semibold">123567</span> (Copy)
+              <span className="font-semibold ml-10">123567</span> (Copy)
             </button>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center ">
             <h2 className="text-lg font-medium text-gray-700">
               Referral Link:
             </h2>
@@ -44,7 +44,7 @@ function AmbassadorHome() {
               }
               className="text-blue-500 hover:underline focus:outline-none"
             >
-              <span className="truncate">
+              <span className="truncate ml-10">
                 https://www.example.com/referral/123456
               </span>{" "}
               (Copy)

@@ -49,7 +49,8 @@ function App() {
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/contacts" element={<ContactUs />} />
           <Route path="/warranty" element={<Warranty />} />
-          <Route path="/referrals" element={<Refererral />} />
+          <Route path="/ambassador/signup" element={<Refererral />} />
+          <Route path="/ambassador/signin" element={<Refererral />} />
           <Route path="/ambassador/home" element={<AmbassadorHome />} />
         </Routes>
         <Footer />
