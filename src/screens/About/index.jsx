@@ -6,6 +6,7 @@ import Contact from "../../components/Contact";
 import { Helmet } from "react-helmet";
 import Director from "../../assets/images/20241017-092608.jpg";
 import Grace from "../../assets/images/Grace.png";
+import BrandCard from "./BrandCard";
 
 function About() {
   return (
@@ -67,6 +68,7 @@ function About() {
           </p>
         </div>
       </div>
+      <BrandCard />
 
       <div className=" bg-black p-10">
         <div className=" p-5 flex flex-col flex-1 items-center">
@@ -96,6 +98,8 @@ function About() {
           </div>
         </div>
       </div>
+
+     
 
       <div className=" flex flex-col items-center py-10 bg-gray-100">
         <h1 className="lg:text-4xl text-2xl font-bold mb-5">

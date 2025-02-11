@@ -2,13 +2,10 @@ function AmbassadorHome() {
   const copyToClipboard = (text) => {
     navigator.clipboard
       .writeText(text)
-      .then(() => {
-        alert(`Copied: ${text}`);
-      })
-      .catch((err) => {
-        console.error("Failed to copy: ", err);
-      });
+      .then(() => alert(`Copied: ${text}`))
+      .catch((err) => console.error("Failed to copy: ", err));
   };
+
   const referrals = [
     { name: "John Smith", date: "Feb 5, 2025" },
     { name: "Alice Johnson", date: "Feb 5, 2025" },
@@ -16,80 +13,90 @@ function AmbassadorHome() {
   ];
 
   return (
-    <div className=" min-h-screen ">
-      <div className=" w-full bg-gray-700 h-[30vh] absolute top-0"></div>
-      <div className="w-full  bg-white shadow-lg rounded-lg p-8 absolute top-[20vh]">
-        <h1 className="text-2xl font-bold text-gray-800 mb-4">
-          Welcome, Jane Doe
-        </h1>
-        <div className="space-y-4">
-          <div className="flex items-center ">
-            <h2 className="text-lg font-medium text-gray-700">
-              Your referral code today is:
-            </h2>
+    <div className="min-h-screen bg-gray-100">
+      <div className="w-full bg-gray-700 h-[30vh] relative">
+        <div className="absolute bottom-6 left-8">
+          <h1 className="text-3xl font-bold text-white">Welcome, Jane Doe</h1>
+          <p className="text-gray-300">Your ambassador dashboard</p>
+        </div>
+      </div>
+
+      <div className="w-full bg-white shadow-lg rounded-lg p-8 mt-[-10vh] mx-auto max-w-4xl">
+        <h2 className="text-xl font-semibold text-gray-800 mb-6">
+          Today's Information
+        </h2>
+
+        <div className="space-y-6">
+          {/* Referral Code */}
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg text-gray-700">Your referral code:</h3>
             <button
               onClick={() => copyToClipboard("123567")}
-              className="text-blue-500 hover:underline focus:outline-none"
+              className="text-blue-600 font-semibold hover:underline"
             >
-              <span className="font-semibold ml-10">123567</span> (Copy)
+              123567 (Copy)
             </button>
           </div>
-          <div className="flex items-center ">
-            <h2 className="text-lg font-medium text-gray-700">
-              Referral Link:
-            </h2>
+
+          {/* Referral Link */}
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg text-gray-700">Referral Link:</h3>
             <button
               onClick={() =>
                 copyToClipboard("https://www.example.com/referral/123456")
               }
-              className="text-blue-500 hover:underline focus:outline-none"
+              className="text-blue-600 font-semibold hover:underline"
             >
-              <span className="truncate ml-10">
-                https://www.example.com/referral/123456
-              </span>{" "}
-              (Copy)
+              https://www.example.com/referral/123456 (Copy)
             </button>
           </div>
-          <h2 className="text-lg font-medium text-gray-700">
-            Referral Count:{" "}
-            <span className="text-green-600 font-semibold">
+
+          {/* Referral Count */}
+          <div className="flex items-center">
+            <h3 className="text-lg text-gray-700">Referral Count:</h3>
+            <span className="ml-2 text-green-600 font-bold">
               {referrals.length}
             </span>
-          </h2>
-          <h2 className="text-lg font-medium text-gray-700">
-            Your Task Today:
-          </h2>
-          <ul className="list-disc pl-6 space-y-2">
-            <li className="text-gray-700">
-              Invite 5 new friends using your referral link.
-            </li>
-            <li className="text-gray-700">
-              Share your referral code on social media.
-            </li>
-            <li className="text-gray-700">
-              Check your referral count at the end of the day.
-            </li>
-          </ul>
-          <table className="w-full border-collapse border border-gray-300 mt-6">
-            <thead>
-              <tr className="bg-gray-200">
-                <th className="border border-gray-300 p-2 text-left">Name</th>
-                <th className="border border-gray-300 p-2 text-left">Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              {referrals.map((referral, index) => (
-                <tr key={index}>
-                  <td className="border border-gray-300 p-2">
-                    {referral.name}
-                  </td>
-                  <td className="border border-gray-300 p-2">
-                    {referral.date}
-                  </td>
+          </div>
+
+          {/* Tasks for Today */}
+          <div>
+            <h3 className="text-lg font-medium text-gray-700 mb-2">
+              Your Task Today:
+            </h3>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>Invite 5 new friends using your referral link.</li>
+              <li>Share your referral code on social media.</li>
+              <li>Check your referral count at the end of the day.</li>
+            </ul>
+          </div>
+
+          {/* Referrals Table */}
+          <div className="mt-6">
+            <h3 className="text-lg font-medium text-gray-700 mb-4">
+              Recent Referrals
+            </h3>
+            <table className="w-full border border-gray-300 text-sm">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border border-gray-300 p-3 text-left">Name</th>
+                  <th className="border border-gray-300 p-3 text-left">Date</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {referrals.map((referral, index) => (
+                  <tr key={index} className="hover:bg-gray-100">
+                    <td className="border border-gray-300 p-3">
+                      {referral.name}
+                    </td>
+                    <td className="border border-gray-300 p-3">
+                      {referral.date}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

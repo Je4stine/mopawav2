@@ -4,12 +4,9 @@ import Login1 from "../../assets/images/login1.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Refererral = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
-    userName: "",
     phoneNumber: "",
-    referredBy: "",
-    termsAccepted: false,
     password: "",
   });
   const [loading, setLoading] = useState(false);
@@ -18,26 +15,22 @@ const Refererral = () => {
   const navigate = useNavigate();
 
   const handleChange = async (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.termsAccepted) {
-      alert("Please accept the terms and conditions.");
-      return;
-    }
 
     setLoading(true);
     setError(null);
 
     try {
       const response = await axios.post(
-        "https://warranty.mopawa.co.ke/registerAmbassador",
+        "https://warranty.mopawa.co.ke/signin",
         formData
       );
       navigate("/ambassador/home");
@@ -56,9 +49,7 @@ const Refererral = () => {
           <img src={Login1} alt="Login image" className=" " />
         </div>
         <div className=" p-8 flex-1">
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            Brand Ambassador Signup
-          </h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">Welcome back</h2>
           {error === null ? (
             <div></div>
           ) : (
@@ -69,44 +60,7 @@ const Refererral = () => {
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-medium mb-2"
-                htmlFor="referredBy"
-              >
-                Refferal code
-              </label>
-              <input
-                type="text"
-                id="referredBy"
-                name="referredBy"
-                value={formData.referredBy}
-                onChange={handleChange}
-                className="w-full p-3 border rounded-md"
-                placeholder="Please provide your referral code"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                className="block text-gray-700 font-medium mb-2"
-                htmlFor="userName"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="userName"
-                name="userName"
-                value={formData.userName}
-                onChange={handleChange}
-                className="w-full p-3 border rounded-md"
-                placeholder="Enter your full name"
-                required
-              />
-            </div>
-
-            <div className="mb-4">
-              <label
-                className="block text-gray-700 font-medium mb-2"
-                htmlFor="phone"
+                htmlFor="phoneNumber"
               >
                 Phone Number
               </label>
@@ -114,13 +68,14 @@ const Refererral = () => {
                 type="tel"
                 id="phoneNumber"
                 name="phoneNumber"
-                value={formData.phoneNumber}
+                value={formData.userName}
                 onChange={handleChange}
                 className="w-full p-3 border rounded-md"
-                placeholder="Enter your mpesa phone number"
+                placeholder="Enter your phone number"
                 required
               />
             </div>
+
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-medium mb-2"
@@ -135,25 +90,11 @@ const Refererral = () => {
                 value={formData.password}
                 onChange={handleChange}
                 className="w-full p-3 border rounded-md"
-                placeholder="Enter your mpesa phone number"
+                placeholder="Enter your password"
                 required
               />
             </div>
 
-            <div className="mb-4 flex items-center">
-              <input
-                type="checkbox"
-                id="termsAccepted"
-                name="termsAccepted"
-                checked={formData.termsAccepted}
-                onChange={handleChange}
-                className="mr-2"
-                required
-              />
-              <label htmlFor="termsAccepted" className="text-gray-700">
-                I accept the terms and conditions.
-              </label>
-            </div>
             <button
               type="submit"
               className="w-full bg-yellow-400 text-white py-3 rounded-md hover:bg-yellow-200 transition"
@@ -163,9 +104,9 @@ const Refererral = () => {
           </form>
 
           <div className=" flex items-center mt-10">
-            <h2> Already signed up?</h2>
+            <h2> Not registred yet? </h2>
             <span className=" text-yellow-400 ml-2 hover:cursor-pointer">
-              <a href="/ambassador/signin">Sign In</a>
+              <a href="/ambassador/signup">Sign Up</a>
             </span>
           </div>
         </div>
@@ -174,4 +115,4 @@ const Refererral = () => {
   );
 };
 
-export default Refererral;
+export default Login;

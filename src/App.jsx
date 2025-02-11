@@ -22,6 +22,7 @@ import ContactUs from "./screens/Contacts/ContactUs";
 import Warranty from "./screens/Warranty/Warranty";
 import Refererral from "./screens/Referrals/Refererral";
 import AmbassadorHome from "./screens/Referrals/AmbassadorHome";
+import Login from "./screens/Referrals/Login";
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
           <Route path="/contacts" element={<ContactUs />} />
           <Route path="/warranty" element={<Warranty />} />
           <Route path="/ambassador/signup" element={<Refererral />} />
-          <Route path="/ambassador/signin" element={<Refererral />} />
+          <Route path="/ambassador/signin" element={<Login />} />
           <Route path="/ambassador/home" element={<AmbassadorHome />} />
         </Routes>
         <Footer />
