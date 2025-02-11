@@ -40,6 +40,11 @@ const Refererral = () => {
         "https://warranty.mopawa.co.ke/registerAmbassador",
         formData
       );
+
+      localStorage.setItem("ambtoken", response.data.token);
+      localStorage.setItem("userName", response.data.userName);
+      localStorage.setItem("referralCode", response.data.referralCode);
+
       navigate("/ambassador/home");
     } catch (error) {
       setError(error.response.data.message);

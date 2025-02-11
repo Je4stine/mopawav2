@@ -33,6 +33,14 @@ const Login = () => {
         "https://warranty.mopawa.co.ke/signin",
         formData
       );
+
+      console.log(response.data);
+
+      localStorage.setItem("ambtoken", response.data.token);
+      localStorage.setItem("userName", response.data.userName);
+      localStorage.setItem("referralCode", response.data.referralCode);
+      setLoading(false);
+
       navigate("/ambassador/home");
     } catch (error) {
       setError(error.response.data.message);
